@@ -1,0 +1,92 @@
+/*
+ * 三平方の定理タワー 個別スタイル
+ */
+
+#blueprint {
+    background-color: #e3f2fd; /* 薄い青 */
+    background-image: 
+        linear-gradient(rgba(0,0,255,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border: 2px solid #4a90e2;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.input-group label {
+    font-weight: bold;
+}
+.input-group input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.result-group {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#side-c-result {
+    color: var(--color-accent);
+    font-size: 1.5em;
+}
+
+#build-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff9800;
+    border-color: #ff9800;
+    color: #fff;
+}
+
+#construction-site {
+    background-color: #f5f5f5;
+}
+
+#tower-info {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: var(--color-marker-yellow);
+    padding: 5px;
+}
+#tower-height {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#tower-display {
+    min-height: 300px;
+    background-color: #e0e0e0;
+    border: 2px dashed #aaa;
+    display: flex;
+    flex-direction: column-reverse; /* 下から積み上げる */
+    align-items: center;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.tower-block {
+    border: 2px solid #333;
+    background-color: #8d6e63; /* 茶色 */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.icon { display: inline-block; }

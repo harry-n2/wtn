@@ -1,0 +1,14 @@
+/* 漢字部首モンスター */
+#lab-area { background-color: #f3e5f5; text-align: center; }
+#fusion-chamber { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 15px; }
+.slot { width: 80px; height: 80px; border: 2px dashed #9c27b0; display: flex; justify-content: center; align-items: center; font-size: 3em; background: #fff; }
+.plus { font-size: 3em; }
+#fusion-btn { background-color: #9c27b0; color: #fff; border-color: #9c27b0; }
+#result-area { text-align: center; }
+#monster-display { font-size: 6em; min-height: 100px; }
+#kanji-example { font-size: 1.5em; }
+#bushu-list-area { background-color: #e8eaf6; }
+#bushu-list { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.bushu { font-size: 2em; padding: 10px; border: 1px solid #333; background: #fff; cursor: pointer; }
+.bushu:hover { background-color: var(--color-marker-yellow); }
+.back-button { display: inline-block; margin-top: 20px; }

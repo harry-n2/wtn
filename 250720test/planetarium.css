@@ -1,0 +1,6 @@
+/* 星座プラネタリウム */
+#sky-area { padding: 0; background: #000; }
+#sky-canvas { width: 100%; height: 300px; background: #000; }
+#constellation-list { background-color: #e8eaf6; }
+#buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.back-button { display: inline-block; margin-top: 20px; }

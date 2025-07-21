@@ -1,0 +1,9 @@
+/* 慣用句料理教室 */
+#kitchen-area { background-color: #fffde7; }
+#cooking-pot { min-height: 80px; background: #fff; border: 2px dashed #ccc; border-radius: 10px; padding: 10px; display: flex; gap: 5px; flex-wrap: wrap; }
+#meaning-text { text-align: center; font-style: italic; margin-top: 10px; }
+#ingredients-area { background-color: #e8f5e9; }
+#ingredients { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.ingredient { padding: 10px 20px; background-color: var(--color-marker-yellow); border: 2px solid #333; border-radius: 20px; cursor: pointer; }
+.ingredient.used { background-color: #ccc; }
+.back-button { display: inline-block; margin-top: 20px; }

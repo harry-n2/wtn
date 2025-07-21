@@ -1,0 +1,8 @@
+/* 四字熟語戦国時代 */
+#map-area { background-color: #d7ccc8; }
+#map { height: 150px; background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="10" y="80" font-size="80" fill="rgba(0,0,0,0.05)">城</text></svg>') #a1887f; border: 2px solid #5d4037; transition: width 0.5s; width: 0%; }
+#unification-rate { font-weight: bold; font-size: 1.2em; }
+#quiz-area { text-align: center; background-color: rgba(255,230,0,0.2); }
+#question-text { font-size: 2em; letter-spacing: 5px; margin-bottom: 20px; }
+#answer-input { width: 80px; height: 80px; font-size: 3em; text-align: center; }
+.back-button { display: inline-block; margin-top: 20px; }

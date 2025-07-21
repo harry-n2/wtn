@@ -1,0 +1,133 @@
+.riddle-header {
+    background-color: #8e44ad;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 5px solid #732d91;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.riddle-title {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    margin: 0;
+    text-shadow: 2px 2px 0 #732d91;
+}
+
+.riddle-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f3f7;
+}
+
+.riddle-container {
+    background: #fff;
+    border: 3px solid #8e44ad;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.riddle-number {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    color: #8e44ad;
+    margin: 0 0 10px;
+}
+
+.riddle-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.answer-container {
+    display: flex;
+    gap: 10px;
+}
+
+#answer-input {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    font-family: var(--font-body);
+}
+
+#submit-answer-btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 5px solid #f39c12;
+    transition: all 0.2s;
+}
+
+#submit-answer-btn:hover {
+    background-color: #f5d02e;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    flex-direction: column;
+}
+
+.feedback-icon {
+    font-size: 3rem;
+}
+
+.feedback-text {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.riddle-footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+#next-riddle-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 5px solid #27ae60;
+    transition: all 0.2s;
+}
+
+#next-riddle-btn:hover {
+    background-color: #38e27e;
+}
+
+.hidden {
+    display: none;
+}

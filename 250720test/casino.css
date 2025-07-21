@@ -1,0 +1,117 @@
+/*
+ * 確率カジノ王 個別スタイル
+ */
+
+#game-table {
+    background-color: #2E7D32; /* 緑のフェルト生地 */
+    border: 5px solid #5D4037; /* 木枠 */
+    color: #fff;
+}
+
+#status-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#status-display .label {
+    font-size: 0.9em;
+    color: #ddd;
+}
+#status-display span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#field {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    min-height: 180px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    position: relative;
+}
+.card.red { color: #d32f2f; }
+.card.black { color: #000; }
+
+.card::before, .card::after {
+    position: absolute;
+    font-size: 0.5em;
+}
+.card::before { top: 5px; left: 10px; }
+.card::after { bottom: 5px; right: 10px; transform: rotate(180deg); }
+
+.card-placeholder {
+    background-color: #ccc;
+    border-style: dashed;
+}
+
+#message-area {
+    text-align: center;
+    min-height: 40px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bet-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#bet-amount {
+    width: 80px;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: #333;
+    color: #fff;
+}
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.action-btn {
+    width: 120px;
+    padding: 15px;
+    font-size: 1.2em;
+}
+#high-btn { background-color: #d32f2f; border-color: #d32f2f; }
+#low-btn { background-color: #1976D2; border-color: #1976D2; }
+
+#probability-corner {
+    background-color: var(--color-marker-blue);
+}
+#probability-display {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.icon { display: inline-block; }

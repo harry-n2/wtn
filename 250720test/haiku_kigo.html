@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俳句季語カレンダー</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="haiku_kigo.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>俳句季語カレンダー</h1><p>季節を感じ、言葉を味わおう。</p></header>
+        <main>
+            <section id="calendar-area" class="gr-section">
+                <h2><span class="icon">📅</span> 季節を選ぶ</h2>
+                <div id="season-selector">
+                    <button class="gr-button season-btn" data-season="spring">春</button>
+                    <button class="gr-button season-btn" data-season="summer">夏</button>
+                    <button class="gr-button season-btn" data-season="autumn">秋</button>
+                    <button class="gr-button season-btn" data-season="winter">冬</button>
+                </div>
+            </section>
+            <section id="display-area" class="gr-section">
+                <div id="photo-area"></div>
+                <div id="kigo-list"></div>
+            </section>
+        </main>
+        <a href="kokugo.html" class="back-button">国語の森に戻る</a>
+    </div>
+    <script src="haiku_kigo.js"></script>
+</body>
+</html>

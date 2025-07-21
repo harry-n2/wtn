@@ -1,0 +1,71 @@
+/* 漢字書き順アニメ 個別スタイル */
+#kanji-select {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.kanji-btn {
+    font-size: 2em;
+    padding: 10px 20px;
+    margin: 5px;
+}
+.kanji-btn.active {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+#animation-area {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#character {
+    font-size: 5em;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+#kanji-container {
+    flex-grow: 1;
+    height: 300px;
+    background-color: #fff;
+    border: 2px solid #333;
+    background-image: 
+        linear-gradient(#eee 1px, transparent 1px),
+        linear-gradient(90deg, #eee 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,0.3) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(0,0,0,0.3) 2px, transparent 2px);
+    background-size: 25% 25%, 25% 25%, 50% 50%, 50% 50%;
+}
+#kanji-svg path {
+    stroke: #333;
+    stroke-width: 4;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#controls {
+    margin-top: 20px;
+    text-align: center;
+}
+#controls .gr-button {
+    margin: 0 5px;
+}
+.icon { display: inline-block; }
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 10px 20px;
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+}
+.back-button:hover {
+    background-color: var(--color-text);
+    color: #fff;
+}

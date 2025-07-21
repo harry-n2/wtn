@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三平方の定理タワー</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="tower.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>三平方の定理タワー</h1>
+            <p>直角三角形を組み上げ、天まで届くタワーを建てろ！</p>
+        </header>
+
+        <main>
+            <section id="blueprint" class="gr-section">
+                <h2><span class="icon">📐</span> 設計図</h2>
+                <div class="input-group">
+                    <label for="side-a">辺 a:</label>
+                    <input type="number" id="side-a" value="3">
+                    <label for="side-b">辺 b:</label>
+                    <input type="number" id="side-b" value="4">
+                </div>
+                <div class="result-group">
+                    <p>斜辺 c = <span id="side-c-result">?</span></p>
+                </div>
+                <button id="build-btn" class="gr-button">このブロックで建設！</button>
+            </section>
+
+            <section id="construction-site" class="gr-section">
+                <h2><span class="icon">🏗️</span> 建設現場</h2>
+                <div id="tower-info">
+                    タワーの高さ: <span id="tower-height">0</span> m
+                </div>
+                <div id="tower-display">
+                    <!-- ここにブロッ��が積み上がる -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Pythagoras Construction</p>
+        </footer>
+    </div>
+    <script src="tower.js"></script>
+</body>
+</html>

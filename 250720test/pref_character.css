@@ -1,0 +1,7 @@
+/* 都道府県キャラクター */
+#japan-map { text-align: center; background-color: #e0f2f1; }
+#character-display { font-size: 6em; min-height: 120px; }
+#pref-name { font-size: 1.5em; font-weight: bold; }
+#quiz-area { background-color: #fce4ec; }
+#options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.back-button { display: inline-block; margin-top: 20px; }

@@ -1,0 +1,6 @@
+/* 選挙シミュレーター */
+#election-status { background-color: #f3e5f5; text-align: center; }
+#approval-rate { font-size: 2em; font-weight: bold; }
+#action-panel { background-color: #e8eaf6; }
+#actions { display: flex; flex-direction: column; gap: 10px; }
+.back-button { display: inline-block; margin-top: 20px; }

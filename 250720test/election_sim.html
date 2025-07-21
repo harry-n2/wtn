@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選挙シミュレーター</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="election_sim.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>選挙シミュレーター</h1><p>演説で支持を集め、選挙に勝利しよう！</p></header>
+        <main>
+            <section id="election-status" class="gr-section">
+                <h2><span class="icon">📊</span> 選挙状況</h2>
+                <p>支持率: <span id="approval-rate">10</span>%</p>
+            </section>
+            <section id="action-panel" class="gr-section">
+                <h2><span class="icon">🎤</span> 選挙活動</h2>
+                <div id="actions"></div>
+            </section>
+        </main>
+        <a href="shakai.html" class="back-button">社会の平原に戻る</a>
+    </div>
+    <script src="election_sim.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* 
+  sogo_apps.css 
+  This file contains styles for multiple apps in the "Sogo" area.
+*/
+
+/* 暗記カード魔法学校 */
+#magic-desk { text-align: center; }
+.magic-card { width: 200px; height: 280px; margin: 20px auto; position: relative; perspective: 1000px; cursor: pointer; transition: transform 0.8s; transform-style: preserve-3d;}
+.magic-card .card-front, .magic-card .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; justify-content: center; align-items: center; border: 2px solid #673ab7; border-radius: 15px; font-size: 1.5em; }
+.card-front { background: #d1c4e9; z-index: 2; }
+.card-back { background: #fff; transform: rotateY(180deg); }
+.magic-card.flipped { transform: rotateY(180deg); }
+#next-card { margin-top: 10px; }
+
+/* 記憶の宮殿建築家 */
+#palace { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.room { min-height: 150px; border: 2px dashed #9c27b0; padding: 10px; background: #f3e5f5; }
+.room h3 { margin: 0 0 10px 0; text-align: center; background: #e1bee7; }
+.room ul { list-style: '🧠 '; padding-left: 20px; margin:0; }
+.room li { background: #fff; margin-bottom: 5px; padding: 2px 5px; border-radius: 3px;}
+
+/* 脳トレ受験道場 */
+#card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.memory-card { height: 80px; background: #e1bee7; border: 2px solid #9c27b0; display: flex; justify-content: center; align-items: center; font-size: 2em; cursor: pointer; }
+.memory-card.flipped { background: #fff; }
+
+/* 暗記リズムゲーム */
+#game-lane { height: 400px; background: #333; position: relative; overflow: hidden; padding: 10px; }
+#note-lane { height: 100%; width: 120px; margin: 0 auto; position: relative; border-left: 2px dashed #fff; border-right: 2px dashed #fff; }
+.note { position: absolute; top: -60px; left:0; width: 120px; padding: 10px; background: var(--color-accent); color: #fff; text-align: center; border-radius: 5px; font-size: 0.9em; }
+@keyframes fall { 0% { transform: translateY(0); } 100% { transform: translateY(460px); } }
+#judge-line { position: absolute; bottom: 60px; left: 0; width: 100%; height: 5px; background: var(--color-marker-yellow); }
+#hit-btn { margin-top: 10px; display: block; margin-left: auto; margin-right: auto; }
+
+/* AI先生との対話 */
+#chat-window { display: flex; flex-direction: column; height: 400px; }
+#chat-log { flex-grow: 1; background: #fff; border: 1px solid #ccc; padding: 10px; overflow-y: auto; display: flex; flex-direction: column;}
+.chat-message { margin-bottom: 10px; padding: 8px 12px; border-radius: 15px; max-width: 80%; }
+.chat-message.user { background: #c5e1a5; align-self: flex-end; }
+.chat-message.ai { background: #e1bee7; align-self: flex-start; }
+#chat-input-area { display: flex; gap: 5px; margin-top: 10px; }
+#user-input { flex-grow: 1; }
+
+/* 勉強貯金箱 */
+#piggy-bank { text-align: center; }
+#bank-display { font-size: 8em; min-height: 150px; background: #fffde7; border-radius: 20px; padding: 10px; position: relative; overflow: hidden; border: 2px solid #fbc02d; }
+.coin { position: absolute; font-size: 0.5em; animation: drop 0.5s forwards; top: -50px; left: 50%; margin-left: -20px;}
+@keyframes drop { 0% { transform: translateY(0); } 100% { transform: translateY(120px); } }
+#total-points { font-size: 1.5em; font-weight: bold; }
+
+/* 受験仲間SNS */
+#timeline { display: flex; flex-direction: column; gap: 15px; }
+.post { background: #fff; border: 1px solid #ccc; border-radius: 10px; padding: 15px; box-shadow: 2px 2px 0 #eee; }
+.post h3 { margin: 0 0 5px 0; font-size: 1.2em; color: var(--color-accent); }
+.post p { margin: 0; }
+
+/* 暗記マラソン大会 */
+#marathon-track { text-align: center; }
+#answer { display: none; margin: 10px auto; }
+
+/* 受験占い師 */
+#fortune-telling { text-align: center; }
+#result-area { min-height: 100px; background: #fff; border: 2px dashed #673ab7; border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+
+/* 共通 */
+.back-button { display: inline-block; margin-top: 20px; }
+.gr-section h2 { text-align: center; }
+.icon { display: inline-block; }

@@ -1,0 +1,11 @@
+/* 文学史タイムトラベル */
+#timeline-area { background-color: #f5f5f5; }
+#timeline { display: flex; justify-content: space-around; padding: 20px 0; }
+.era-box { width: 120px; min-height: 150px; border: 2px dashed #aaa; padding: 10px; text-align: center; background-color: #fff; }
+.era-box h3 { margin: 0 0 10px 0; background-color: var(--color-marker-blue); }
+#card-deck-area { background-color: rgba(100,100,100,0.1); text-align: center; }
+#card-deck { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.work-card { width: 100px; height: 140px; background-color: var(--color-marker-yellow); border: 2px solid #333; border-radius: 10px; padding: 10px; cursor: grab; text-align: center; }
+.work-card h4 { margin: 0 0 5px 0; font-size: 1em; }
+.work-card p { margin: 0; font-size: 0.8em; }
+.back-button { display: inline-block; margin-top: 20px; }

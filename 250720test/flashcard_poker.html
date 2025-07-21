@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暗記カードポーカー</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="flashcard_poker.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>暗記カードポーカー</h1><p>知識で役を揃えろ！新感覚ポーカーバトル！</p></header>
+        <main>
+            <section id="poker-table" class="gr-section">
+                <div id="player-hand" class="hand"></div>
+                <div id="action-area">
+                    <p id="question-text"></p>
+                    <input type="text" id="answer-input" placeholder="��えを入力">
+                    <button id="answer-btn" class="gr-button">解答して交換</button>
+                </div>
+            </section>
+            <section id="info-area" class="gr-section">
+                <h2><span class="icon">ℹ️</span> 役とルール</h2>
+                <p>5枚のカードで役を作ろう！クイズに正解するとカードを交換できます。</p>
+                <p>役一覧: 5カード > 4カード > 3カード > ...</p>
+            </section>
+        </main>
+        <a href="game_apps.html" class="back-button">ゲーム強化エリアに戻る</a>
+    </div>
+    <script src="flashcard_poker.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>語呂合わせ作詞家</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="goroawase_lyricist.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>語呂合わせ作詞家</h1><p>君だけのオリジナル暗記ソングを作ろう！</p></header>
+        <main>
+            <section id="studio" class="gr-section">
+                <h2><span class="icon">🎵</span> 作詞スタジオ</h2>
+                <div class="input-group">
+                    <label for="title-input">曲名</label>
+                    <input type="text" id="title-input" class="gr-input" placeholder="例: 平安京ロック">
+                </div>
+                <div class="input-group">
+                    <label for="lyrics-input">歌詞 (語呂合わせ)</label>
+                    <textarea id="lyrics-input" class="gr-textarea" placeholder="鳴くよ(794)うぐいす平安京..."></textarea>
+                </div>
+                <button id="save-btn" class="gr-button">保存する</button>
+            </section>
+            <section id="music-list" class="gr-section">
+                <h2><span class="icon">🎶</span> マイソングリスト</h2>
+                <ul id="song-list"></ul>
+            </section>
+        </main>
+        <a href="creative_apps.html" class="back-button">創作・表現エリアに戻る</a>
+    </div>
+    <script src="goroawase_lyricist.js"></script>
+</body>
+</html>

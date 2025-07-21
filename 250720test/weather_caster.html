@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報キャスター</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="weather_caster.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>天気予報キャスター</h1><p>天気図を読んで、明日の天気を予報しよう！</p></header>
+        <main>
+            <section id="studio" class="gr-section">
+                <h2><span class="icon">📺</span> ウェザースタジオ</h2>
+                <div id="weather-map">
+                    <p id="question-text">この地域の天気は？</p>
+                </div>
+            </section>
+            <section id="control-panel" class="gr-section">
+                <h2><span class="icon">🎛️</span> 操作パネル</h2>
+                <div id="symbols"></div>
+            </section>
+        </main>
+        <a href="rika.html" class="back-button">理科の海に戻る</a>
+    </div>
+    <script src="weather_caster.js"></script>
+</body>
+</html>

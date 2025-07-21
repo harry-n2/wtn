@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢字書き順アニメ</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="kanji_animation.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>漢字書き順アニメ</h1>
+            <p>アニメキャラと一緒に、正しい書き順をマスター！</p>
+        </header>
+        <main>
+            <section class="gr-section">
+                <h2><span class="icon">✍️</span>練習する漢字を選ぼう</h2>
+                <div id="kanji-select">
+                    <button class="gr-button kanji-btn" data-kanji="永">永</button>
+                    <button class="gr-button kanji-btn" data-kanji="飛">飛</button>
+                    <button class="gr-button kanji-btn" data-kanji="馬">馬</button>
+                </div>
+            </section>
+            <section class="gr-section">
+                <div id="animation-area">
+                    <div id="character">😊</div>
+                    <div id="kanji-container">
+                        <svg id="kanji-svg" viewBox="0 0 109 109"></svg>
+                    </div>
+                </div>
+                <div id="controls">
+                    <button id="play-btn" class="gr-button">再生</button>
+                    <button id="reset-btn" class="gr-button">リセット</button>
+                </div>
+            </section>
+        </main>
+        <a href="kokugo.html" class="back-button">国語の森に戻る</a>
+    </div>
+    <!-- 漢字の書き順データを読み込むライブラリ -->
+    <script src="https://cdn.jsdelivr.net/npm/kanjivg@2.2.2/kanjivg.min.js"></script>
+    <script src="kanji_animation.js"></script>
+</body>
+</html>

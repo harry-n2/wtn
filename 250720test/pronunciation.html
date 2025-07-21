@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英語発音ものまね</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pronunciation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="pronunciation-header">
+            <a href="index.html" class="back-button">＜</a>
+            <h1 class="pronunciation-title">英語発音ものまね</h1>
+        </header>
+
+        <main class="pronunciation-main">
+            <div class="sentence-display">
+                <p id="sentence-text">This is a pen.</p>
+                <p id="sentence-kana">ディス イズ ア ペン</p>
+            </div>
+            <div class="controls">
+                <button id="play-model-btn">
+                    <span class="icon">▶️</span>
+                    <span class="text">お手本</span>
+                </button>
+                <div class="record-section">
+                    <button id="record-btn">
+                        <span class="icon">🎤</span>
+                        <span class="text">ものまね録音</span>
+                    </button>
+                    <p id="record-status">タップして録音開始</p>
+                </div>
+            </div>
+            <div class="result-display">
+                <p id="result-text">ここに評価が表示されます</p>
+            </div>
+        </main>
+        
+        <footer class="pronunciation-footer">
+            <button id="next-sentence-btn">次のお手本へ</button>
+        </footer>
+    </div>
+    <script src="pronunciation.js"></script>
+</body>
+</html>

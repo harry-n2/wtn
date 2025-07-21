@@ -1,0 +1,108 @@
+.idiom-header {
+    background: #111;
+    color: #0ff;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 5px solid #0ff;
+    position: relative;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.idiom-title {
+    font-size: 1.8rem;
+    margin: 0;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.idiom-main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stage {
+    background: #000;
+    border: 2px solid #0ff;
+    border-radius: 10px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#idiom-display {
+    display: flex;
+    gap: 15px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.idiom-word {
+    opacity: 0.5;
+    transition: all 0.1s ease-in-out;
+}
+
+.idiom-word.active {
+    opacity: 1;
+    color: #0ff;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #0ff;
+}
+
+#beat-marker {
+    position: absolute;
+    bottom: 10px;
+    left: -100px; /* Start off-screen */
+    width: 100px;
+    height: 5px;
+    background: #f0f;
+    box-shadow: 0 0 10px #f0f, 0 0 20px #f0f;
+    border-radius: 5px;
+}
+
+.meaning-display {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+#idiom-meaning {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.idiom-footer {
+    display: flex;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+}
+
+#play-btn, #next-btn {
+    flex: 1;
+    background-color: #333;
+    color: #0ff;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 2px solid #0ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#play-btn:hover, #next-btn:hover {
+    background-color: #0ff;
+    color: #111;
+    box-shadow: 0 0 15px #0ff;
+}

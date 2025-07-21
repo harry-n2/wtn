@@ -1,0 +1,10 @@
+/* 植物育成シミュレーター */
+#garden { background-color: #e8f5e9; text-align: center; }
+#plant-pot { height: 200px; width: 150px; background: #8d6e63; margin: 0 auto; border-radius: 0 0 20px 20px; position: relative; }
+#plant { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); font-size: 2em; transition: all 0.5s; }
+#growth-gauge { width: 80%; height: 20px; background: #c8e6c9; border: 1px solid #333; margin: 10px auto; }
+#gauge-bar { width: 0%; height: 100%; background: #4caf50; transition: width 0.5s; }
+#quiz-time { background-color: #f1f8e9; }
+#quiz-text { font-weight: bold; }
+#options { display: flex; flex-direction: column; gap: 10px; }
+.back-button { display: inline-block; margin-top: 20px; }

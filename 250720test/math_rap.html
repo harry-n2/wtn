@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学公式ラップ</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="math_rap.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>数学公式ラップ</h1>
+            <p>リズムで覚えようぜ、数学の公式！</p>
+        </header>
+
+        <main>
+            <section class="gr-section">
+                <h2><span class="icon">🎵</span> トラックを選んでくれ！</h2>
+                <div id="rap-selection">
+                    <button class="gr-button track-btn" data-formula="quadratic">解の公式</button>
+                    <button class="gr-button track-btn" data-formula="pythagorean">三平方の定理</button>
+                    <button class="gr-button track-btn" data-formula="root">平方根</button>
+                </div>
+            </section>
+
+            <section class="gr-section">
+                <h2 id="track-title">トラックを選択</h2>
+                <div id="lyrics-container">
+                    <div id="lyrics">ここにリリックが表示されるぜ</div>
+                </div>
+            </section>
+
+            <section class="gr-section">
+                <h2><span class="icon">✍️</span> オリジナルリリック工場</h2>
+                <textarea id="custom-lyrics" class="gr-textarea" placeholder="ここに自分のリリックを書いてみよう！"></textarea>
+                <button id="save-btn" class="gr-button">リリックを保存</button>
+            </section>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Math Rappers</p>
+        </footer>
+    </div>
+    <script src="math_rap.js"></script>
+</body>
+</html>

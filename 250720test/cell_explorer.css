@@ -1,0 +1,10 @@
+/* 細胞の中の小人さん */
+#cell-view { background-color: #fce4ec; }
+#cell-map { position: relative; height: 300px; background: #f8bbd0; border-radius: 50%; border: 3px solid #e91e63; }
+.organelle { position: absolute; border-radius: 50%; cursor: pointer; }
+#nucleus { width: 100px; height: 100px; background: #ad1457; top: 100px; left: 100px; }
+#mitochondria { width: 50px; height: 80px; background: #ff8a65; top: 50px; left: 200px; border-radius: 40px; }
+#explorer { position: absolute; font-size: 2em; top: 200px; left: 50px; transition: all 0.5s; }
+#info-panel { background-color: #e3f2fd; }
+#info-text { min-height: 50px; }
+.back-button { display: inline-block; margin-top: 20px; }

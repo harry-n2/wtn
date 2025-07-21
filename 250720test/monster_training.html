@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受験モンスター育成</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="monster_training.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>受験モンスター育成</h1><p>毎日の勉強で、君だけのモンスターを育てよう！</p></header>
+        <main>
+            <section id="monster-room" class="gr-section">
+                <h2 id="monster-name">もんすけ</h2>
+                <div id="monster-display"></div>
+                <div id="status-display">
+                    <div class="status">
+                        <label>レベル</label>
+                        <span id="level">1</span>
+                    </div>
+                    <div class="status">
+                        <label>経験値</label>
+                        <div class="gauge"><div id="exp-bar"></div></div>
+                    </div>
+                </div>
+            </section>
+            <section id="action-panel" class="gr-section">
+                <h2><span class="icon">💪</span> アクション</h2>
+                <button id="study-btn" class="gr-button">勉強する (クイズ)</button>
+                <button id="rest-btn" class="gr-button">休む</button>
+            </section>
+        </main>
+        <a href="sogo.html" class="back-button">総合・特殊エリアに戻る</a>
+    </div>
+    <script src="monster_training.js"></script>
+</body>
+</html>

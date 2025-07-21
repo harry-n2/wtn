@@ -1,0 +1,26 @@
+/* 受験生ヨガ */
+#yoga-studio {
+    background-color: #e0f2f1;
+    text-align: center;
+}
+#pose-name {
+    font-size: 1.8em;
+    color: #00796b;
+}
+#pose-display {
+    font-size: 8em;
+    min-height: 150px;
+    margin: 20px 0;
+}
+#pose-description {
+    font-size: 1.1em;
+    min-height: 40px;
+}
+#controls {
+    text-align: center;
+    background-color: #f1f8e9;
+}
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+}

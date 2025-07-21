@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古文単語RPG</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="kobun_rpg.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>古文単語RPG</h1><p>古の言葉を操り、モンスターを討伐せよ！</p></header>
+        <main>
+            <section id="game-screen" class="gr-section">
+                <div id="enemy-area">
+                    <div id="enemy-name">もののけ</div>
+                    <div id="enemy-sprite">👻</div>
+                    <p id="enemy-word">「あはれなり」</p>
+                </div>
+                <div id="player-area">
+                    <div id="player-sprite">🤺</div>
+                    <div id="hp-bar"><span id="player-hp">HP: 100</span></div>
+                </div>
+            </section>
+            <section id="command-area" class="gr-section">
+                <h2><span class="icon">⚔️</span> コマンド</h2>
+                <div id="options"></div>
+            </section>
+        </main>
+        <a href="kokugo.html" class="back-button">国語の森に戻る</a>
+    </div>
+    <script src="kobun_rpg.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*
+ * 数列パターン探偵 個別スタイル
+ */
+
+#case-file {
+    background-color: #f5f5dc; /* ベージュ */
+    background-image: 
+        repeating-linear-gradient(#f5f5dc, #f5f5dc 23px, #e0e0d0 24px, #e0e0d0 24px),
+        url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="80" font-size="80" fill="rgba(0,0,0,0.05)" transform="rotate(-15)">機密</text></svg>');
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.header-stamp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: var(--font-sub);
+    color: #d32f2f;
+    border: 3px solid #d32f2f;
+    padding: 5px 10px;
+    transform: rotate(10deg);
+    font-size: 1.2em;
+}
+
+#problem-description {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sequence {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#answer-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#solve-btn {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+#hint-area {
+    margin-top: 15px;
+}
+.hint-btn {
+    font-size: 0.9em;
+    background-color: #777;
+    border-color: #777;
+    color: #fff;
+}
+#hint-text {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--color-marker-yellow);
+    border-radius: 5px;
+}
+
+#solved-cases {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+#solved-list {
+    list-style-type: '✅ ';
+    padding-left: 30px;
+}
+#solved-list li {
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.hidden {
+    display: none;
+}
+.icon { display: inline-block; }

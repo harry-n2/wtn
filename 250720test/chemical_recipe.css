@@ -1,0 +1,9 @@
+/* 化学式料理レシピ */
+#recipe-book { background-color: #fffde7; text-align: center; }
+#result-display { font-size: 2em; font-weight: bold; background: #fff; padding: 15px; border-radius: 10px; }
+#ingredients-box { background-color: #e0f7fa; }
+#ingredients { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
+.ingredient-btn { font-size: 1.5em; padding: 15px 25px; }
+.ingredient-btn.selected { background-color: var(--color-accent); color: #fff; }
+#cook-btn { width: 100%; padding: 15px; }
+.back-button { display: inline-block; margin-top: 20px; }

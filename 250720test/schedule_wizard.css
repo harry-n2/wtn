@@ -1,0 +1,48 @@
+/* 受験スケジュール魔法使い */
+#spellbook {
+    background-color: #ede7f6;
+}
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+#task-input {
+    flex-grow: 1;
+}
+#add-task-btn {
+    background-color: #673ab7;
+    border-color: #673ab7;
+    color: #fff;
+}
+#task-list-area {
+    background-color: #f5f5f5;
+}
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+.task-item {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #673ab7;
+}
+.task-item.completed {
+    text-decoration: line-through;
+    color: #999;
+    border-left-color: #ccc;
+}
+.task-actions button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+}

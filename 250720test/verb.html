@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不規則動詞ダンス</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="verb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="verb-header">
+            <a href="index.html" class="back-button">＜</a>
+            <h1 class="verb-title">不規則動詞ダンス</h1>
+        </header>
+
+        <main class="verb-main">
+            <div class="dance-floor">
+                <div class="video-placeholder">
+                    <p>ここにダンス動画が入るよ！</p>
+                    <div class="music-note">♪</div>
+                    <div class="music-note">♫</div>
+                </div>
+            </div>
+            <div class="verb-display">
+                <div class="verb-card" id="base-form">
+                    <p class="label">原形</p>
+                    <p class="verb-text"></p>
+                </div>
+                <div class="verb-card" id="past-form">
+                    <p class="label">過去形</p>
+                    <p class="verb-text"></p>
+                </div>
+                <div class="verb-card" id="participle-form">
+                    <p class="label">過去分詞形</p>
+                    <p class="verb-text"></p>
+                </div>
+            </div>
+            <p id="japanese-meaning"></p>
+        </main>
+        
+        <footer class="verb-footer">
+            <button id="next-verb-btn">次の曲へ</button>
+        </footer>
+    </div>
+    <script src="verb.js"></script>
+</body>
+</html>

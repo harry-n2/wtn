@@ -1,0 +1,45 @@
+/*
+ * 数学公式ラップ 個別スタイル
+ */
+
+#rap-selection {
+    text-align: center;
+}
+
+.track-btn {
+    margin: 5px;
+}
+
+.track-btn.active {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+#lyrics-container {
+    background-color: var(--color-marker-blue);
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#lyrics {
+    font-size: 1.3em;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    font-weight: bold;
+}
+
+#save-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.icon {
+    display: inline-block;
+    transform: rotate(-10deg);
+}

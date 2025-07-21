@@ -1,0 +1,9 @@
+/* 世界遺産写真集 */
+#photo-viewer { text-align: center; }
+#main-photo { height: 300px; background-color: #eee; background-size: cover; background-position: center; border: 2px solid #333; border-radius: 10px; }
+#heritage-name { margin-top: 10px; }
+#thumbnail-bar { background-color: #fafafa; }
+#thumbnails { display: flex; gap: 10px; overflow-x: auto; padding: 10px; }
+.thumb { width: 80px; height: 60px; background-color: #ccc; border: 2px solid #333; cursor: pointer; flex-shrink: 0; }
+.thumb.active { border-color: var(--color-accent); }
+.back-button { display: inline-block; margin-top: 20px; }

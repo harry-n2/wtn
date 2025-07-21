@@ -1,0 +1,9 @@
+/* クリエイティブアプリ共通 */
+.back-button { display: inline-block; margin-top: 20px; }
+.gr-section h2 { text-align: center; }
+.icon { display: inline-block; }
+
+/* 暗記漫画スタジオ */
+#manga-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.manga-panel { height: 150px; background: #fff; border: 2px solid #333; padding: 5px; }
+.manga-panel.selected { border-color: var(--color-accent); }

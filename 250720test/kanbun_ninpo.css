@@ -1,0 +1,9 @@
+/* 漢文返り点忍法 */
+#scroll-area { background-color: #f5f5dc; }
+#kanbun-text { display: flex; flex-direction: column; align-items: center; font-size: 2.5em; writing-mode: vertical-rl; }
+.kanji-char { cursor: pointer; padding: 10px 5px; border-radius: 5px; }
+.kanji-char:hover { background-color: var(--color-marker-yellow); }
+.kanji-char.clicked { background-color: var(--color-accent); color: white; }
+#answer-area { background-color: rgba(100,100,100,0.1); }
+#reading-order { min-height: 50px; background: #fff; padding: 10px; border-radius: 5px; font-size: 1.5em; text-align: center; }
+.back-button { display: inline-block; margin-top: 20px; }

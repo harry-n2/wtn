@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漢字部首モンスター</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="bushu_monster.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>漢字部首モンスター</h1><p>部首を合成し、新たなモンスターを生み出せ！</p></header>
+        <main>
+            <section id="lab-area" class="gr-section">
+                <h2><span class="icon">🔬</span> モンスター研究所</h2>
+                <div id="fusion-chamber">
+                    <div id="slot1" class="slot">？</div>
+                    <div class="plus">+</div>
+                    <div id="slot2" class="slot">？</div>
+                </div>
+                <button id="fusion-btn" class="gr-button">合体！</button>
+            </section>
+            <section id="result-area" class="gr-section">
+                <h2><span class="icon">🐉</span> 誕生したモンスター</h2>
+                <div id="monster-display"></div>
+                <div id="kanji-example"></div>
+            </section>
+            <section id="bushu-list-area" class="gr-section">
+                <h2><span class="icon">📚</span> 部首一覧</h2>
+                <div id="bushu-list"></div>
+            </section>
+        </main>
+        <a href="kokugo.html" class="back-button">国語の森に戻る</a>
+    </div>
+    <script src="bushu_monster.js"></script>
+</body>
+</html>

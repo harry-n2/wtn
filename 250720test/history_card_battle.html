@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歴史人物カードバトル</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="history_card_battle.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>歴史人物カードバトル</h1><p>偉人たちの力で、ライバルを打ち破れ！</p></header>
+        <main>
+            <section id="battle-field" class="gr-section">
+                <div class="player-area" id="enemy-area">
+                    <div class="card-slot"></div>
+                    <p>ENEMY</p>
+                </div>
+                <div class="vs">VS</div>
+                <div class="player-area" id="player-area">
+                    <div class="card-slot"></div>
+                    <p>PLAYER</p>
+                </div>
+            </section>
+            <section id="hand-area" class="gr-section">
+                <h2><span class="icon">🎴</span> あなたの手札</h2>
+                <div id="hand"></div>
+            </section>
+        </main>
+        <a href="shakai.html" class="back-button">社会の平原に戻る</a>
+    </div>
+    <script src="history_card_battle.js"></script>
+</body>
+</html>

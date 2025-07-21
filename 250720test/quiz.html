@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英語4択バラエティ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="quiz-header">
+            <a href="index.html" class="back-button">＜</a>
+            <h1 class="quiz-title">英語4択バラエティ</h1>
+        </header>
+
+        <main class="quiz-main">
+            <div class="question-container">
+                <p class="question-number">第1問</p>
+                <p class="question-text">次の日本語を英語にしなさい：「りんご」</p>
+            </div>
+
+            <div class="options-container">
+                <button class="option">Apple</button>
+                <button class="option">Orange</button>
+                <button class="option">Banana</button>
+                <button class="option">Grape</button>
+            </div>
+
+            <div class="feedback-container">
+                <div class="feedback-icon"></div>
+                <p class="feedback-text"></p>
+            </div>
+        </main>
+        
+        <footer class="quiz-footer">
+            <button id="next-question-btn" class="hidden">次の問題へ</button>
+        </footer>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

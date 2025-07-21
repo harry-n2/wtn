@@ -1,0 +1,135 @@
+.pronunciation-header {
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 5px solid #2a5a9a;
+    position: relative;
+}
+
+.pronunciation-title {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    margin: 0;
+    text-shadow: 2px 2px 0 #2a5a9a;
+}
+
+.pronunciation-main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.sentence-display {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+#sentence-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+#sentence-kana {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#play-model-btn, #record-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+}
+
+.controls .icon {
+    font-size: 4rem;
+    transition: transform 0.2s;
+}
+.controls .text {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#play-model-btn:hover .icon { transform: scale(1.1); }
+#record-btn:hover .icon { transform: scale(1.1); }
+
+#record-btn .icon {
+    color: #e74c3c;
+}
+#record-btn.recording .icon {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.record-section {
+    text-align: center;
+}
+
+#record-status {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0 0;
+}
+
+.result-display {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result-text {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    color: #3a7bd5;
+    margin: 0;
+}
+
+.pronunciation-footer {
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+#next-sentence-btn {
+    width: 100%;
+    background: #3a7bd5;
+    color: white;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

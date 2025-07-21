@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学マジックショー</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="magic.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>数学マジックショー</h1>
+            <p>数学が起こす奇跡の瞬間をご覧あれ！</p>
+        </header>
+
+        <main>
+            <section id="stage" class="gr-section">
+                <div id="curtain"></div>
+                <div id="magician">🎩</div>
+                <div id="message-bubble">
+                    <p id="message-text">さあ、ショーの始まりです！<br>下のボタンを押して、指示に従ってください。</p>
+                </div>
+                <div id="controls">
+                    <button id="next-btn" class="gr-button">始めましょう</button>
+                    <button id="reveal-btn" class="gr-button hidden">タネ明かしを見る</button>
+                </div>
+            </section>
+
+            <section id="explanation" class="gr-section hidden">
+                <h2><span class="icon">💡</span> タネ明かし</h2>
+                <p>なぜ、答えが必ず「5」になるとわかったのでしょうか？<br>
+                実は、このようなカラクリがあるのです。</p>
+                <div id="formula-explanation">
+                    <p>あなたが最初に選んだ数字を「X」とします。</p>
+                    <ol>
+                        <li>数を2倍する: <span class="formula">X * 2 = 2X</span></li>
+                        <li>10を足す: <span class="formula">2X + 10</span></li>
+                        <li>2で割る: <span class="formula">(2X + 10) / 2 = X + 5</span></li>
+                        <li>最初の数を引く: <span class="formula">(X + 5) - X = 5</span></li>
+                    </ol>
+                    <p>そう、あなたが最初にどんな数字を選んでも、最終的な答えは必ず **5** になるのです！これが数学の魔法です。</p>
+                </div>
+                <button id="reset-btn" class="gr-button">もう一度試す</button>
+            </section>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Mathematical Magicians</p>
+        </footer>
+    </div>
+    <script src="magic.js"></script>
+</body>
+</html>

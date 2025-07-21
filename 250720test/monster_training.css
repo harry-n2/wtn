@@ -1,0 +1,11 @@
+/* 受験モンスター育成 */
+#monster-room { background-color: #e3f2fd; text-align: center; }
+#monster-name { font-size: 1.5em; }
+#monster-display { font-size: 6em; min-height: 120px; transition: transform 0.5s; }
+#status-display { display: flex; flex-direction: column; gap: 5px; margin-top: 10px; }
+.status { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.gauge { width: 70%; height: 20px; background: #ccc; border: 1px solid #333; }
+#exp-bar { width: 0%; height: 100%; background: var(--color-marker-yellow); }
+#action-panel { background-color: #f1f8e9; }
+#action-panel .gr-button { display: block; width: 100%; margin-bottom: 10px; }
+.back-button { display: inline-block; margin-top: 20px; }

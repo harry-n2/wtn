@@ -1,0 +1,118 @@
+/*
+ * 図形変身バトル 個別スタイル
+ */
+
+#battle-arena {
+    background: #222 url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><path d="M0 25 H 50 M 25 0 V 50" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></svg>');
+    padding: 20px;
+}
+
+#enemy-side, #player-side {
+    margin-bottom: 20px;
+}
+
+.status {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.name {
+    font-family: var(--font-sub);
+    font-size: 1.2em;
+    background-color: var(--color-accent);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.hp-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #555;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.hp {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    transition: width 0.5s ease;
+}
+#enemy-side .hp {
+    background: linear-gradient(to right, #f44336, #ff9800);
+}
+
+.shape-display {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-marker-blue);
+    border: 3px solid #fff;
+    transition: transform 0.2s ease;
+}
+#enemy-shape {
+    background-color: var(--color-marker-yellow);
+}
+
+#controls {
+    background-color: rgba(100,100,100,0.1);
+}
+.control-group {
+    margin-bottom: 15px;
+}
+.control-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.control-group input[type="range"] {
+    width: 100%;
+}
+#attack-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+    font-family: var(--font-sub);
+    background-color: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+}
+
+#battle-log {
+    background-color: rgba(200,200,200,0.2);
+}
+#log-area {
+    background-color: #fff;
+    min-height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 120px;
+}
+#log-area p {
+    margin: 0 0 5px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.icon { display: inline-block; }
+
+/* Animations */
+.attack-anim {
+    animation: flash 0.3s;
+}
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+.damage-anim {
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>確率カジノ王</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="casino.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>確率カジノ王</h1>
+            <p>確率を味方につけて、カジノを制覇せよ！</p>
+        </header>
+
+        <main>
+            <section id="game-table" class="gr-section">
+                <div id="status-display">
+                    <div id="player-chips">
+                        <span class="label">所持チップ</span>
+                        <span id="chips-amount">100</span>
+                    </div>
+                    <div id="deck-count">
+                        <span class="label">山札</span>
+                        <span id="deck-amount">52</span>枚
+                    </div>
+                </div>
+
+                <div id="field">
+                    <div id="base-card" class="card card-placeholder">?</div>
+                    <div id="result-card" class="card card-placeholder"></div>
+                </div>
+
+                <div id="message-area">
+                    <p id="message-text">チップを賭けて、ハイかローを選んでください。</p>
+                </div>
+
+                <div id="controls">
+                    <div class="bet-control">
+                        <label for="bet-amount">賭けチップ:</label>
+                        <input type="number" id="bet-amount" value="10" min="1">
+                    </div>
+                    <div class="action-buttons">
+                        <button id="high-btn" class="gr-button action-btn">ハイ</button>
+                        <button id="low-btn" class="gr-button action-btn">ロー</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="probability-corner" class="gr-section">
+                <h2><span class="icon">📈</span> 確率研究所</h2>
+                <div id="probability-display">
+                    <p>ここに確率が表示されます</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Probability Kings</p>
+        </footer>
+    </div>
+    <script src="casino.js"></script>
+</body>
+</html>

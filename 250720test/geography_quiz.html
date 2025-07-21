@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地理クイズ世界一周</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="geography_quiz.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>地理クイズ世界一周</h1><p>クイズに答えて、世界一周の旅に出よう！</p></header>
+        <main>
+            <section id="world-map-area" class="gr-section">
+                <h2><span class="icon">✈️</span> 現在地: <span id="current-location">日本</span></h2>
+                <div id="world-map"></div>
+            </section>
+            <section id="quiz-area" class="gr-section">
+                <h2 id="question-text"></h2>
+                <div id="options"></div>
+            </section>
+        </main>
+        <a href="shakai.html" class="back-button">社会の平原に戻る</a>
+    </div>
+    <script src="geography_quiz.js"></script>
+</body>
+</html>

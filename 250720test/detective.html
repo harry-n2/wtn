@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数列パターン探偵</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="detective.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>数列パターン探偵</h1>
+            <p>隠された数字を見つけ出し、事件を解決せよ！</p>
+        </header>
+
+        <main>
+            <section id="case-file" class="gr-section">
+                <div class="header-stamp">TOP SECRET</div>
+                <h2><span class="icon">📁</span> 事���ファイル No.<span id="case-number">1</span></h2>
+                <div id="problem-description">
+                    <p>以下の数列に隠された「？」の数字を特定せよ。</p>
+                    <p id="sequence-text" class="sequence"></p>
+                </div>
+                <div id="input-area">
+                    <input type="number" id="answer-input" placeholder="答えは？">
+                    <button id="solve-btn" class="gr-button">解決</button>
+                </div>
+                <div id="hint-area">
+                    <button id="hint-btn" class="gr-button hint-btn">ヒントを見る</button>
+                    <p id="hint-text" class="hidden"></p>
+                </div>
+            </section>
+
+            <section id="solved-cases" class="gr-section">
+                <h2><span class="icon">✅</span> 解決済み事件リスト</h2>
+                <ul id="solved-list">
+                    <!-- JSで解決済みの事件を追加 -->
+                </ul>
+            </section>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Sequence Detective Agency</p>
+        </footer>
+    </div>
+    <script src="detective.js"></script>
+</body>
+</html>

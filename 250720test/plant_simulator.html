@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植物育成シミュレーター</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="plant_simulator.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>植物育成シミュレーター</h1><p>クイズに答えて、ふたばを大木に育てよう！</p></header>
+        <main>
+            <section id="garden" class="gr-section">
+                <h2><span class="icon">🌱</span> マイガーデン</h2>
+                <div id="plant-pot">
+                    <div id="plant"></div>
+                </div>
+                <div id="growth-gauge">
+                    <div id="gauge-bar"></div>
+                </div>
+            </section>
+            <section id="quiz-time" class="gr-section">
+                <h2><span class="icon">❓</span> 育成クイズ</h2>
+                <p id="quiz-text"></p>
+                <div id="options"></div>
+            </section>
+        </main>
+        <a href="rika.html" class="back-button">理科の海に戻る</a>
+    </div>
+    <script src="plant_simulator.js"></script>
+</body>
+</html>

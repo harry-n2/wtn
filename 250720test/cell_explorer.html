@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>細胞の中の小人さん</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="cell_explorer.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>細胞の中の小人さん</h1><p>細胞の中を探検して、生命の神秘を発見！</p></header>
+        <main>
+            <section id="cell-view" class="gr-section">
+                <h2><span class="icon">🦠</span> 細胞マップ</h2>
+                <div id="cell-map">
+                    <div class="organelle" id="nucleus" title="核"></div>
+                    <div class="organelle" id="mitochondria" title="ミトコンドリア"></div>
+                    <div id="explorer">🧍</div>
+                </div>
+            </section>
+            <section id="info-panel" class="gr-section">
+                <h2><span class="icon">ℹ️</span> 情報パネル</h2>
+                <p id="info-text">探検したい場所をクリックしよう！</p>
+            </section>
+        </main>
+        <a href="rika.html" class="back-button">理科の海に戻る</a>
+    </div>
+    <script src="cell_explorer.js"></script>
+</body>
+</html>

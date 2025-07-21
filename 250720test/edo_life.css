@@ -1,0 +1,7 @@
+/* 江戸時代生活体験 */
+#edo-town { text-align: center; background-color: #f5f5dc; }
+#event-title { font-size: 1.5em; }
+#event-image { font-size: 6em; min-height: 120px; }
+#event-text { min-height: 40px; }
+#action-area { text-align: center; }
+.back-button { display: inline-block; margin-top: 20px; }

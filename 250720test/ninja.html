@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算スピード忍者</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="ninja.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>計算スピード忍者</h1>
+            <p>計算の術で、敵を打ち破れ！</p>
+        </header>
+
+        <main>
+            <div id="game-screen">
+                <div id="status-bar">
+                    <div class="status-item">
+                        <span class="status-label">得点</span>
+                        <span id="score" class="status-value">0</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">残り時間</span>
+                        <span id="time-left" class="status-value">30</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">命</span>
+                        <span id="lives" class="status-value">❤️❤️❤️</span>
+                    </div>
+                </div>
+
+                <div id="problem-area">
+                    <div id="problem-scroll">
+                        <p id="problem-text">下の「開始」で修行を始めるでござる！</p>
+                    </div>
+                </div>
+
+                <div id="input-area">
+                    <input type="number" id="answer-input" placeholder="答えを入力" disabled>
+                    <button id="start-btn" class="gr-button">開始</button>
+                </div>
+            </div>
+
+            <div id="result-screen" class="hidden">
+                <h2>修行完了！</h2>
+                <p>あなたの得点は...</p>
+                <p id="final-score">0</p>
+                <button id="retry-btn" class="gr-button">再挑戦</button>
+            </div>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Ninja Calc Dojo</p>
+        </footer>
+    </div>
+    <script src="ninja.js"></script>
+</body>
+</html>

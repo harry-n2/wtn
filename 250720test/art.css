@@ -1,0 +1,116 @@
+/*
+ * 関数グラフアート 個別スタイル
+ */
+
+#canvas-area {
+    background-color: rgba(233, 30, 99, 0.05);
+}
+
+#myChart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#controller {
+    background-color: rgba(173, 216, 230, 0.2);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.gr-input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: var(--font-main);
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+#color-picker {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    padding: 0;
+    cursor: pointer;
+}
+
+#line-width {
+    width: 100%;
+}
+
+#draw-btn {
+    background-color: #009688;
+    border-color: #009688;
+    color: #fff;
+}
+#draw-btn:hover {
+    background-color: #fff;
+    color: #009688;
+}
+
+#clear-btn {
+    background-color: #f44336;
+    border-color: #f44336;
+    color: #fff;
+}
+#clear-btn:hover {
+    background-color: #fff;
+    color: #f44336;
+}
+
+#gallery {
+    background-color: rgba(255, 230, 0, 0.2);
+}
+
+#function-list {
+    list-style: none;
+    padding: 0;
+}
+
+.function-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.function-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-preview {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+.delete-func-btn {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #aaa;
+}
+.delete-func-btn:hover {
+    color: var(--color-accent);
+}
+
+.icon {
+    display: inline-block;
+}

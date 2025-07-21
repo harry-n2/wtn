@@ -1,0 +1,11 @@
+/* 語呂合わせ作詞家 */
+#studio { background-color: #f3e5f5; }
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+#save-btn { width: 100%; }
+#music-list { background-color: #e3f2fd; }
+#song-list { list-style: none; padding: 0; }
+.song-item { background: #fff; padding: 15px; border: 1px solid #333; border-radius: 5px; margin-bottom: 10px; }
+.song-item h3 { margin: 0 0 10px 0; }
+.song-item p { white-space: pre-wrap; margin: 0; }
+.back-button { display: inline-block; margin-top: 20px; }

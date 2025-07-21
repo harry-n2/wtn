@@ -1,0 +1,63 @@
+/* 元素記号戦隊 個別スタイル */
+#battle-screen {
+    background: #333 url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path d="M-10 110 l20 -20 M80 120 l20 -20 M40 70 l20 -20" stroke="rgba(255,255,0,0.5)" stroke-width="5" /></svg>');
+    text-align: center;
+    color: #fff;
+}
+#enemy { margin-bottom: 20px; }
+.enemy-name { background: #333; display: inline-block; padding: 5px 10px; border-radius: 5px; }
+.enemy-img { font-size: 5em; margin-top: 10px; animation: float 2s infinite; }
+@keyframes float { 0%,100% {transform:translateY(0);} 50% {transform:translateY(-15px);} }
+
+#squad {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.hero {
+    width: 60px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.hero-face { font-size: 2em; }
+.hero-name { font-size: 0.8em; }
+
+#message-board {
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#element-panel { background-color: rgba(200,200,200,0.2); }
+#choices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+.choice-btn {
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+.icon { display: inline-block; }
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 10px 20px;
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+}
+.back-button:hover {
+    background-color: var(--color-text);
+    color: #fff;
+}

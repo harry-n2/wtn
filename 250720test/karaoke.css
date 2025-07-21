@@ -1,0 +1,119 @@
+.karaoke-header {
+    background-color: #34495e;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 5px solid #2c3e50;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.karaoke-title {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    margin: 0;
+    text-shadow: 2px 2px 0 #2c3e50;
+}
+
+.karaoke-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #2c3e50;
+    flex-grow: 1;
+}
+
+.lyrics-screen {
+    background: #000;
+    border: 5px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin: 0 0 20px;
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+#lyrics-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ecf0f1;
+    overflow: hidden;
+}
+
+.lyric-word {
+    margin-bottom: 15px;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.lyric-word.active {
+    opacity: 1;
+    color: #3498db;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #3498db;
+}
+
+.lyric-word .japanese {
+    font-size: 1.2rem;
+    font-family: var(--font-body);
+    color: #bdc3c7;
+    display: block;
+    margin-top: 5px;
+}
+
+.controls-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+#play-btn, #stop-btn {
+    width: 100px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: var(--font-title);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#play-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom: 5px solid #27ae60;
+}
+#play-btn:hover { background-color: #38e27e; }
+
+#stop-btn {
+    background-color: #e74c3c;
+    color: white;
+    border-bottom: 5px solid #c0392b;
+}
+#stop-btn:hover { background-color: #f06050; }

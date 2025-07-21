@@ -1,0 +1,73 @@
+/*
+ * エリアページ 共通スタイル
+ */
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.app-card {
+    background-color: #fff;
+    border: 2px solid var(--color-text);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.app-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+.app-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: var(--color-accent);
+}
+
+.app-card p {
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+}
+
+.app-card .gr-button {
+    width: 100%;
+}
+
+.app-card.coming-soon {
+    background-color: #f5f5f5;
+    color: #999;
+}
+.app-card.coming-soon h3 {
+    color: #999;
+}
+.app-card.coming-soon .gr-button {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 10px 20px;
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+}
+.back-button:hover {
+    background-color: var(--color-text);
+    color: #fff;
+}
+.icon { display: inline-block; }

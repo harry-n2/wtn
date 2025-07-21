@@ -1,0 +1,97 @@
+/*
+ * 数学語呂合わせ工場 個別スタイル
+ */
+
+#factory-floor {
+    background-color: rgba(173, 216, 230, 0.2); /* 薄い水色 */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 3px solid var(--color-accent);
+}
+
+.gr-input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: var(--font-main);
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+#produce-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #4CAF50; /* 生産ボタンは緑 */
+    border-color: #4CAF50;
+}
+#produce-btn:hover {
+    background-color: var(--color-background);
+    color: #4CAF50;
+}
+
+#warehouse {
+    background-color: rgba(255, 230, 0, 0.2); /* 薄い黄色 */
+}
+
+#production-count {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-accent);
+}
+
+#goroawase-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.goroawase-item {
+    background-color: #fff;
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 0 #ddd;
+    position: relative;
+}
+
+.goroawase-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    background-image: linear-gradient(transparent 60%, var(--color-marker-yellow) 60%);
+    display: inline;
+}
+
+.goroawase-item p {
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #aaa;
+}
+.delete-btn:hover {
+    color: var(--color-accent);
+}
+
+.icon {
+    display: inline-block;
+}

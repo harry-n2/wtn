@@ -1,0 +1,11 @@
+/* 戦国武将育成ゲーム */
+#character-status { background-color: #efebe9; }
+#busho-name { text-align: center; }
+#status-bars { display: flex; flex-direction: column; gap: 5px; }
+.status-bar { display: flex; align-items: center; }
+.status-label { width: 80px; }
+.gauge { flex-grow: 1; height: 20px; background: #d7ccc8; border: 1px solid #333; }
+.gauge-inner { width: 10%; height: 100%; background: var(--color-accent); transition: width 0.5s; }
+#training-menu { background-color: #fbe9e7; }
+#training-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.back-button { display: inline-block; margin-top: 20px; }

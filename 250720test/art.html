@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関数グラフアート</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="art.css">
+    <!-- Chart.jsライブラリの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>関数グラフアート</h1>
+            <p>数式で、世界に一つだけのアートを描こう。</p>
+        </header>
+
+        <main>
+            <section id="canvas-area" class="gr-section">
+                <h2><span class="icon">🎨</span> アートキャンバス</h2>
+                <canvas id="myChart"></canvas>
+            </section>
+
+            <section id="controller" class="gr-section">
+                <h2><span class="icon">✍️</span> パレット</h2>
+                <div class="form-group">
+                    <label for="function-input">関数式 ( y = ... )</label>
+                    <input type="text" id="function-input" class="gr-input" placeholder="例: 0.5 * x**2 - 5">
+                </div>
+                <div class="form-group">
+                    <label for="color-picker">色を選ぶ</label>
+                    <input type="color" id="color-picker" value="#e91e63">
+                </div>
+                <div class="form-group">
+                    <label for="line-width">線の太さ</label>
+                    <input type="range" id="line-width" min="1" max="10" value="3">
+                </div>
+                <button id="draw-btn" class="gr-button">描画する</button>
+                <button id="clear-btn" class="gr-button">全消し</button>
+            </section>
+
+            <section id="gallery" class="gr-section">
+                <h2><span class="icon">🖼️</span> ギャラリー</h2>
+                <ul id="function-list">
+                    <!-- ここに描画した関数が追加される -->
+                </ul>
+            </section>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Function Graph Artists</p>
+        </footer>
+    </div>
+    <script src="art.js"></script>
+</body>
+</html>

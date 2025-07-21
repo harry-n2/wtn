@@ -1,0 +1,7 @@
+/* 俳句季語カレンダー */
+#calendar-area { text-align: center; }
+#display-area { background-color: #fafafa; }
+#photo-area { height: 250px; background-size: cover; background-position: center; border: 2px solid #333; border-radius: 10px; margin-bottom: 15px; transition: background-image 0.5s; }
+#kigo-list { list-style: none; padding: 0; column-count: 2; }
+#kigo-list li { padding: 5px; background-color: var(--color-marker-yellow); margin-bottom: 5px; border-radius: 5px; }
+.back-button { display: inline-block; margin-top: 20px; }

@@ -1,0 +1,9 @@
+/* 生物分類動物園 */
+#zoo-map { background-color: #e8f5e9; }
+#areas { display: flex; justify-content: space-around; gap: 10px; }
+.area { width: 100px; min-height: 120px; border: 2px dashed #4caf50; padding: 10px; text-align: center; background: #fff; }
+.area h3 { margin: 0 0 10px 0; background: #a5d6a7; }
+#animal-parade { background-color: #fffde7; text-align: center; }
+#animals { display: flex; justify-content: center; gap: 10px; }
+.animal { font-size: 3em; cursor: grab; }
+.back-button { display: inline-block; margin-top: 20px; }

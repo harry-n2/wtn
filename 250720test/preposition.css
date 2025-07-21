@@ -1,0 +1,132 @@
+.preposition-header {
+    background-color: #8B4513;
+    color: #F5DEB3;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 5px solid #65320d;
+    position: relative;
+}
+
+.preposition-title {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 2px 2px 0 #65320d;
+}
+
+.preposition-main {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #F5DEB3; /* Parchment color */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.adventure-map {
+    width: 100%;
+    height: 200px;
+    border: 3px solid #8B4513;
+    border-radius: 5px;
+    position: relative;
+    background-color: #eee;
+}
+
+#adventure-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+#item-marker {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Hidden by default */
+    box-shadow: 0 0 10px red;
+}
+
+.situation-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px dashed #8B4513;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#situation-text {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#situation-text .blank {
+    display: inline-block;
+    width: 50px;
+    border-bottom: 2px solid #333;
+    margin: 0 5px;
+}
+
+.options-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.option-btn {
+    background-color: #CD853F; /* Peru */
+    color: white;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border-bottom: 4px solid #A0522D; /* Sienna */
+    transition: all 0.2s;
+}
+
+.option-btn:hover {
+    background-color: #D2B48C; /* Tan */
+}
+
+.option-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#feedback-text {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 25px;
+}
+
+.preposition-footer {
+    padding: 15px;
+    background-color: #F5DEB3;
+}
+
+#next-stage-btn {
+    width: 100%;
+    background-color: #228B22; /* ForestGreen */
+    color: white;
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 5px solid #006400; /* DarkGreen */
+}
+
+.hidden {
+    display: none;
+}

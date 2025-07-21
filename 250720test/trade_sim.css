@@ -1,0 +1,9 @@
+/* 貿易商人シミュレーター */
+#market-info { background-color: #e8f5e9; }
+#market-prices { background-color: #fffde7; }
+#price-table { width: 100%; border-collapse: collapse; text-align: center; }
+#price-table th, #price-table td { border: 1px solid #ccc; padding: 8px; }
+#price-table th { background-color: #f5f5f5; }
+.buy-btn, .sell-btn { font-size: 0.8em; padding: 2px 5px; }
+#travel-area { text-align: center; }
+.back-button { display: inline-block; margin-top: 20px; }

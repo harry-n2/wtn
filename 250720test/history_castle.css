@@ -1,0 +1,72 @@
+/* 歴史年号ゴロ合わせ城 個別スタイル */
+#quiz-area {
+    background-color: rgba(255, 230, 0, 0.2);
+    text-align: center;
+}
+#event-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#goro-hint {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+#answer-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#year-input {
+    width: 150px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#castle-area {
+    background-color: #e3f2fd;
+}
+#castle-display {
+    height: 300px;
+    background: linear-gradient(to top, #a1887f 0%, #d7ccc8 100%);
+    border: 3px solid #5d4037;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5px;
+    overflow: hidden;
+}
+.stone-row {
+    display: flex;
+}
+.stone {
+    width: 40px;
+    height: 20px;
+    background-color: #795548;
+    border: 1px solid #5d4037;
+    margin: 1px;
+}
+#castle-level {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.icon { display: inline-block; }
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 10px 20px;
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+}
+.back-button:hover {
+    background-color: var(--color-text);
+    color: #fff;
+}

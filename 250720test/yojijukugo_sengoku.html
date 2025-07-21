@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四字熟語戦国時代</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="yojijukugo_sengoku.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>四字熟語戦国時代</h1><p>四字熟語を答え、天下を統一せよ！</p></header>
+        <main>
+            <section id="map-area" class="gr-section">
+                <h2><span class="icon">🗺️</span> 天下統一マップ</h2>
+                <div id="map"></div>
+                <p>統一率: <span id="unification-rate">0</span>%</p>
+            </section>
+            <section id="quiz-area" class="gr-section">
+                <h2><span class="icon">⚔️</span> 問題</h2>
+                <p id="question-text"></p>
+                <input type="text" id="answer-input" maxlength="1" placeholder="一文字入力">
+                <button id="answer-btn" class="gr-button">解答</button>
+            </section>
+        </main>
+        <a href="kokugo.html" class="back-button">国語の森に戻る</a>
+    </div>
+    <script src="yojijukugo_sengoku.js"></script>
+</body>
+</html>

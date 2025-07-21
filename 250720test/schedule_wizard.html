@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受験スケジュール魔法使い</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="schedule_wizard.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>受験スケジュール魔法使い</h1><p>魔法の杖で、完璧な学習計画を立てよう！</p></header>
+        <main>
+            <section id="spellbook" class="gr-section">
+                <h2><span class="icon">📜</span> 魔法の計画書</h2>
+                <div class="input-area">
+                    <input type="text" id="task-input" class="gr-input" placeholder="例: 数学のワーク p.20-25">
+                    <button id="add-task-btn" class="gr-button">追加</button>
+                </div>
+            </section>
+            <section id="task-list-area" class="gr-section">
+                <h2><span class="icon">✨</span> 今日の呪文 (タスク)</h2>
+                <ul id="task-list"></ul>
+            </section>
+        </main>
+        <a href="utility_apps.html" class="back-button">実用・管理エリアに戻る</a>
+    </div>
+    <script src="schedule_wizard.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>化学式料理レシピ</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="chemical_recipe.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>化学式料理レシピ</h1><p>元素を混ぜて、美味しい化学式を作ろう！</p></header>
+        <main>
+            <section id="recipe-book" class="gr-section">
+                <h2><span class="icon">📖</span> 本日のレシピ: <span id="recipe-name">水</span></h2>
+                <div id="result-display">完成品: H₂O</div>
+            </section>
+            <section id="ingredients-box" class="gr-section">
+                <h2><span class="icon">🧪</span> 材料置き場</h2>
+                <div id="ingredients"></div>
+                <button id="cook-btn" class="gr-button">調理する！</button>
+            </section>
+        </main>
+        <a href="rika.html" class="back-button">理科の海に戻る</a>
+    </div>
+    <script src="chemical_recipe.js"></script>
+</body>
+</html>

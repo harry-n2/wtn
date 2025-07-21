@@ -1,0 +1,54 @@
+/* ゲームアプリ共通 */
+.back-button { display: inline-block; margin-top: 20px; }
+.gr-section h2 { text-align: center; }
+.icon { display: inline-block; }
+
+/* 知識の迷宮 */
+#dungeon-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; background: #795548; max-width: 260px; margin: 0 auto; }
+.cell { width: 50px; height: 50px; background: #a1887f; }
+.cell.player { background: #1e88e5; border-radius: 50%; }
+.cell.door { background: #ffd54f; }
+.cell.wall { background: #4e342e; }
+
+/* クイズバトルロワイヤル */
+#battle-royale { text-align: center; }
+#br-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+
+/* 受験島サバイバル */
+#island-view { background: #a5d6a7; text-align: center; }
+#status-bars p { display: inline-block; margin: 0 10px; font-weight: bold; }
+#action-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+/* 暗記パズル職人 */
+#puzzle-board { display: flex; justify-content: space-around; }
+#questions-col, #answers-col { display: flex; flex-direction: column; gap: 10px; }
+.puzzle-piece { padding: 15px; border: 2px solid #333; cursor: pointer; border-radius: 5px; }
+.question { background: #e3f2fd; }
+.answer { background: #fffde7; }
+.puzzle-piece.selected { border-color: var(--color-accent); box-shadow: 0 0 10px var(--color-accent); }
+.puzzle-piece.solved { background: #ccc; pointer-events: none; text-decoration: line-through; }
+
+/* 知識収集ハンター */
+#hunting-ground { text-align: center; background: #ffcdd2; }
+#monster h2 { margin: 0; }
+#monster p { font-size: 1.5em; font-weight: bold; color: #b71c1c; }
+
+/* 受験シティ建設 */
+#city-view { display: flex; gap: 5px; min-height: 150px; background: #c8e6c9; align-items: flex-end; padding: 10px; }
+.building { font-size: 2em; }
+
+/* 暗記レーシング */
+#race-track { position: relative; height: 100px; background: #bdbdbd; border-bottom: 5px dashed #fff; overflow: hidden; }
+#player-car, #enemy-car { font-size: 2em; position: absolute; transition: left 0.5s; }
+#player-car { top: 10px; left: 0; }
+#enemy-car { top: 50px; left: 0; }
+
+/* クイズ��出ゲーム */
+#escape-room { background: #efebe9; }
+#message-box { min-height: 40px; background: #fff; padding: 10px; border-radius: 5px; margin-bottom: 15px; text-align: center; }
+#objects { display: flex; gap: 10px; justify-content: center; }
+.object { font-size: 4em; cursor: pointer; }
+
+/* 受験戦略シミュレーター */
+#sim-status { text-align: center; }
+#plan-buttons { display: flex; flex-direction: column; gap: 10px; }

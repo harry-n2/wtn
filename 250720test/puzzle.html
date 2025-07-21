@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図形パズル職人</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>図形パズル職人</h1>
+            <p>図形を組み合わせて、合同・相似をマスターしよう！</p>
+        </header>
+
+        <main>
+            <div id="puzzle-info">
+                <div class="info-box">
+                    <h2><span class="icon">🎯</span> お題</h2>
+                    <p id="mission-text">左の図形と合同な図形を完成させよ！</p>
+                </div>
+                <div class="info-box">
+                    <h2><span class="icon">⏱️</span> タイム</h2>
+                    <p><span id="time-display">0.00</span> 秒</p>
+                </div>
+            </div>
+
+            <div id="puzzle-area">
+                <div id="template-shape-container" class="shape-container">
+                    <div id="template-shape"></div>
+                </div>
+                <div id="user-shape-container" class="shape-container drop-zone">
+                    <!-- ピースがここにドロップされる -->
+                </div>
+            </div>
+
+            <div id="piece-box" class="gr-section">
+                <h2><span class="icon">🖐️</span> ピース置き場</h2>
+                <div id="pieces">
+                    <!-- JSでピースをここに生成 -->
+                </div>
+            </div>
+
+            <button id="reset-btn" class="gr-button">リセット</button>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Geometry Masters</p>
+        </footer>
+    </div>
+    <script src="puzzle.js"></script>
+</body>
+</html>

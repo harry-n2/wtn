@@ -1,0 +1,12 @@
+/* 暗記カードポーカー */
+#poker-table { background-color: #2e7d32; }
+.hand { display: flex; justify-content: center; gap: 10px; min-height: 150px; }
+.card { width: 100px; height: 140px; background-color: #fff; border: 2px solid #333; border-radius: 10px; padding: 10px; text-align: center; cursor: pointer; }
+.card.selected { border-color: var(--color-accent); transform: translateY(-10px); }
+.card-back { background-color: #b71c1c; }
+.card .subject { font-size: 0.8em; font-weight: bold; }
+.card .question { font-size: 1em; margin: 10px 0; }
+#action-area { text-align: center; margin-top: 20px; }
+#answer-input { padding: 10px; }
+#info-area { background-color: #fffde7; }
+.back-button { display: inline-block; margin-top: 20px; }

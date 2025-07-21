@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学びの冒険アイランド</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <style>
+        /* ポータルページ専用スタイル */
+        body {
+            background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="30" font-size="20" fill="rgba(0,0,0,0.03)" transform="rotate(-30)">Study</text><text x="50" y="80" font-size="20" fill="rgba(0,0,0,0.03)" transform="rotate(10)">Fun</text></svg>');
+        }
+        .gr-header h1 {
+            font-size: 3.5em;
+            background-image: linear-gradient(transparent 60%, var(--color-marker-yellow) 60%);
+        }
+        .island-map {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        .map-area {
+            background-color: #fff;
+            border: 2px solid var(--color-text);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .map-area:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 0px rgba(0,0,0,0.15);
+        }
+        .map-area h2 {
+            font-size: 2em;
+            margin: 0 0 10px 0;
+            color: var(--color-text);
+        }
+        .map-area .icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+        .map-area p {
+            margin: 0 0 20px 0;
+            color: #555;
+            min-height: 40px;
+        }
+        .map-area a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .map-area .gr-button {
+            background-color: var(--color-accent);
+            color: #fff;
+            border-color: var(--color-accent);
+        }
+        #kokugo .icon { color: #e91e63; }
+        #math .icon { color: #2196f3; }
+        #rika .icon { color: #4caf50; }
+        #shakai .icon { color: #ff9800; }
+        #sogo .icon { color: #9c27b0; }
+        #game .icon { color: #f44336; }
+        #creative .icon { color: #00bcd4; }
+        #health .icon { color: #8bc34a; }
+        #utility .icon { color: #607d8b; }
+    </style>
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>学びの冒険アイランド</h1>
+            <p>さあ、キミだけの学習の冒険に出かけよう！</p>
+        </header>
+
+        <main class="island-map">
+            <div id="kokugo" class="map-area"><a href="kokugo.html"><div class="icon">📖</div><h2>国語の森</h2><p>言葉の源流を探し、表現の達人を目指せ！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="math" class="map-area"><a href="math_area.html"><div class="icon">📐</div><h2>数学の山</h2><p>論理の頂を極め、数字の世界を支配せよ！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="rika" class="map-area"><a href="rika.html"><div class="icon">🔬</div><h2>理科の海</h2><p>自然の神秘に触れ、科学の真理を探求せよ！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="shakai" class="map-area"><a href="shakai.html"><div class="icon">🌍</div><h2>社会の平原</h2><p>時と場所を駆け巡り、世界の成り立ちを解き明かせ！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="sogo" class="map-area"><a href="sogo.html"><div class="icon">🌟</div><h2>総合・特殊エリア</h2><p>ユニークな学習法で、ライバルに差をつけろ！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="game" class="map-area"><a href="game_apps.html"><div class="icon">🎮</div><h2>ゲーム強化エリア</h2><p>遊びの力で、学習の限界を突破せよ！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="creative" class="map-area"><a href="creative_apps.html"><div class="icon">🎨</div><h2>創作・表現エリア</h2><p>君の創造力で、学びをアートに変えよう！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="health" class="map-area"><a href="health_apps.html"><div class="icon">🧘</div><h2>健康・メンタルケアエリア</h2><p>心と体を整え、最高のパフォーマンスを！</p><button class="gr-button">冒険する</button></a></div>
+            <div id="utility" class="map-area"><a href="utility_apps.html"><div class="icon">🛠️</div><h2>実用・管理エリア</h2><p>学習を効率化し、受験をスマートに乗り切ろう！</p><button class="gr-button">冒険する</button></a></div>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Adventure Island Academy</p>
+        </footer>
+    </div>
+</body>
+</html>

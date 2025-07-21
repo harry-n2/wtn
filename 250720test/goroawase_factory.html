@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学語呂合わせ工場</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="goroawase_factory.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header">
+            <h1>数学語呂合わせ工場</h1>
+            <p>君だけの最高の語呂合わせを生産しよう！</p>
+        </header>
+
+        <main>
+            <section id="factory-floor" class="gr-section">
+                <h2><span class="icon">🏭</span> 生産ライン</h2>
+                <div class="form-group">
+                    <label for="formula-input">公式・覚えたい事</label>
+                    <input type="text" id="formula-input" class="gr-input" placeholder="例：円周率">
+                </div>
+                <div class="form-group">
+                    <label for="goroawase-input">語呂合わせ</label>
+                    <textarea id="goroawase-input" class="gr-textarea" placeholder="例：産医師異国に向こう"></textarea>
+                </div>
+                <button id="produce-btn" class="gr-button">生産する！</button>
+            </section>
+
+            <section id="warehouse" class="gr-section">
+                <h2><span class="icon">📦</span> 製品倉庫</h2>
+                <p>生産数: <span id="production-count">0</span>個</p>
+                <ul id="goroawase-list">
+                    <!-- ここに生産した語呂合わせが追加される -->
+                </ul>
+            </section>
+        </main>
+
+        <footer class="gr-footer">
+            <p>&copy; 2025 Goroawase Factory Inc.</p>
+        </footer>
+    </div>
+    <script src="goroawase_factory.js"></script>
+</body>
+</html>

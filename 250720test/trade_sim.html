@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貿易商人シミュレーター</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="trade_sim.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>貿易商人シミュレーター</h1><p>安く買って高く売れ！目指せ大商人！</p></header>
+        <main>
+            <section id="market-info" class="gr-section">
+                <h2><span class="icon">📈</span> 市場情報</h2>
+                <p>所持金: <span id="money">1000</span>G</p>
+                <p>現在の都市: <span id="current-city">A国</span></p>
+            </section>
+            <section id="market-prices" class="gr-section">
+                <h2><span class="icon">⚖️</span> 価格表</h2>
+                <table id="price-table"></table>
+            </section>
+            <section id="travel-area" class="gr-section">
+                <button id="travel-btn" class="gr-button">他の国へ移動する</button>
+            </section>
+        </main>
+        <a href="shakai.html" class="back-button">社会の平原に戻る</a>
+    </div>
+    <script src="trade_sim.js"></script>
+</body>
+</html>

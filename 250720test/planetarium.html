@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星座プラネタリウム</title>
+    <link rel="stylesheet" href="graphic_style.css">
+    <link rel="stylesheet" href="planetarium.css">
+</head>
+<body>
+    <div class="gr-container">
+        <header class="gr-header"><h1>星座プラネタリウム</h1><p>星を繋いで、夜空に星座を描こう。</p></header>
+        <main>
+            <section id="sky-area" class="gr-section">
+                <canvas id="sky-canvas"></canvas>
+            </section>
+            <section id="constellation-list" class="gr-section">
+                <h2><span class="icon">✨</span> 星座リスト</h2>
+                <div id="buttons"></div>
+            </section>
+        </main>
+        <a href="rika.html" class="back-button">理科の海に戻る</a>
+    </div>
+    <script src="planetarium.js"></script>
+</body>
+</html>
