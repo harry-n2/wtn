@@ -1,0 +1,5 @@
+feat: Add all learning-app-island applications
+
+- Create a comprehensive learning platform 'Learning Adventure Island'.
+- Implement a total of 80 mini-apps across 8 thematic areas.
+- All apps are designed with a graphic recording style for a fun and engaging user experience.
