@@ -3,93 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学びの冒険アイランド</title>
-    <link rel="stylesheet" href="graphic_style.css">
+    <title>アプリ一覧 - 250720test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <style>
-        /* ポータルページ専用スタイル */
         body {
-            background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="0" y="30" font-size="20" fill="rgba(0,0,0,0.03)" transform="rotate(-30)">Study</text><text x="50" y="80" font-size="20" fill="rgba(0,0,0,0.03)" transform="rotate(10)">Fun</text></svg>');
-        }
-        .gr-header h1 {
-            font-size: 3.5em;
-            background-image: linear-gradient(transparent 60%, var(--color-marker-yellow) 60%);
-        }
-        .island-map {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            font-family: 'Gochi Hand', cursive;
+            background-color: #E3F2FD; /* 薄いブルー */
+            color: #1E88E5; /* ブルー */
+            margin: 0;
             padding: 20px;
         }
-        .map-area {
-            background-color: #fff;
-            border: 2px solid var(--color-text);
-            border-radius: 10px;
-            padding: 20px;
+        header {
             text-align: center;
-            box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 40px;
         }
-        .map-area:hover {
-            transform: translateY(-5px);
-            box-shadow: 8px 8px 0px rgba(0,0,0,0.15);
+        h1 {
+            font-size: 3em;
+            display: inline-block;
+            border-bottom: 5px solid #64B5F6; /* 少し濃いブルー */
+            padding-bottom: 5px;
         }
-        .map-area h2 {
-            font-size: 2em;
-            margin: 0 0 10px 0;
-            color: var(--color-text);
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .map-area .icon {
-            font-size: 4em;
-            margin-bottom: 15px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px;
         }
-        .map-area p {
-            margin: 0 0 20px 0;
-            color: #555;
-            min-height: 40px;
+        .app-card {
+            background-color: #FFFFFF;
+            border: 3px solid #90CAF9; /* 明るいブルー */
+            /* 手書き風の角丸 */
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 5px 5px 0px #90CAF9;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        .map-area a {
-            display: block;
+        .app-card:hover {
+            transform: rotate(-2deg) translateY(-5px);
+            box-shadow: 7px 7px 0px #64B5F6;
+        }
+        .app-card a {
             text-decoration: none;
             color: inherit;
+            display: block;
+            padding: 20px;
         }
-        .map-area .gr-button {
-            background-color: var(--color-accent);
-            color: #fff;
-            border-color: var(--color-accent);
+        .app-card h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #1976D2; /* 濃いブルー */
+            text-align: center;
         }
-        #kokugo .icon { color: #e91e63; }
-        #math .icon { color: #2196f3; }
-        #rika .icon { color: #4caf50; }
-        #shakai .icon { color: #ff9800; }
-        #sogo .icon { color: #9c27b0; }
-        #game .icon { color: #f44336; }
-        #creative .icon { color: #00bcd4; }
-        #health .icon { color: #8bc34a; }
-        #utility .icon { color: #607d8b; }
     </style>
 </head>
 <body>
-    <div class="gr-container">
-        <header class="gr-header">
-            <h1>学びの冒険アイランド</h1>
-            <p>さあ、キミだけの学習の冒険に出かけよう！</p>
-        </header>
-
-        <main class="island-map">
-            <div id="kokugo" class="map-area"><a href="kokugo.html"><div class="icon">📖</div><h2>国語の森</h2><p>言葉の源流を探し、表現の達人を目指せ！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="math" class="map-area"><a href="math_area.html"><div class="icon">📐</div><h2>数学の山</h2><p>論理の頂を極め、数字の世界を支配せよ！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="rika" class="map-area"><a href="rika.html"><div class="icon">🔬</div><h2>理科の海</h2><p>自然の神秘に触れ、科学の真理を探求せよ！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="shakai" class="map-area"><a href="shakai.html"><div class="icon">🌍</div><h2>社会の平原</h2><p>時と場所を駆け巡り、世界の成り立ちを解き明かせ！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="sogo" class="map-area"><a href="sogo.html"><div class="icon">🌟</div><h2>総合・特殊エリア</h2><p>ユニークな学習法で、ライバルに差をつけろ！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="game" class="map-area"><a href="game_apps.html"><div class="icon">🎮</div><h2>ゲーム強化エリア</h2><p>遊びの力で、学習の限界を突破せよ！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="creative" class="map-area"><a href="creative_apps.html"><div class="icon">🎨</div><h2>創作・表現エリア</h2><p>君の創造力で、学びをアートに変えよう！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="health" class="map-area"><a href="health_apps.html"><div class="icon">🧘</div><h2>健康・メンタルケアエリア</h2><p>心と体を整え、最高のパフォーマンスを！</p><button class="gr-button">冒険する</button></a></div>
-            <div id="utility" class="map-area"><a href="utility_apps.html"><div class="icon">🛠️</div><h2>実用・管理エリア</h2><p>学習を効率化し、受験をスマートに乗り切ろう！</p><button class="gr-button">冒険する</button></a></div>
-        </main>
-
-        <footer class="gr-footer">
-            <p>&copy; 2025 Adventure Island Academy</p>
-        </footer>
-    </div>
+    <header>
+        <h1>アプリ一覧 (250720test)</h1>
+    </header>
+    <main class="container">
+        <div class="grid">
+            <div class="app-card"><a href="ai_teacher.html"><h3>ai_teacher</h3></a></div>
+            <div class="app-card"><a href="anki_manga_studio.html"><h3>anki_manga_studio</h3></a></div>
+            <div class="app-card"><a href="anki_marathon.html"><h3>anki_marathon</h3></a></div>
+            <div class="app-card"><a href="anki_puzzle_craft.html"><h3>anki_puzzle_craft</h3></a></div>
+            <div class="app-card"><a href="anki_racing.html"><h3>anki_racing</h3></a></div>
+            <div class="app-card"><a href="ankicard_magic_school.html"><h3>ankicard_magic_school</h3></a></div>
+            <div class="app-card"><a href="art.html"><h3>art</h3></a></div>
+            <div class="app-card"><a href="battle.html"><h3>battle</h3></a></div>
+            <div class="app-card"><a href="bio_zoo.html"><h3>bio_zoo</h3></a></div>
+            <div class="app-card"><a href="brain_training_dojo.html"><h3>brain_training_dojo</h3></a></div>
+            <div class="app-card"><a href="bungakushi_travel.html"><h3>bungakushi_travel</h3></a></div>
+            <div class="app-card"><a href="bushu_monster.html"><h3>bushu_monster</h3></a></div>
+            <div class="app-card"><a href="casino.html"><h3>casino</h3></a></div>
+            <div class="app-card"><a href="cell_explorer.html"><h3>cell_explorer</h3></a></div>
+            <div class="app-card"><a href="chemical_recipe.html"><h3>chemical_recipe</h3></a></div>
+            <div class="app-card"><a href="constitution_bingo.html"><h3>constitution_bingo</h3></a></div>
+            <div class="app-card"><a href="creative_apps.html"><h3>creative_apps</h3></a></div>
+            <div class="app-card"><a href="detective.html"><h3>detective</h3></a></div>
+            <div class="app-card"><a href="edo_life.html"><h3>edo_life</h3></a></div>
+            <div class="app-card"><a href="eigo-goroawase-oukoku.html"><h3>eigo-goroawase-oukoku</h3></a></div>
+            <div class="app-card"><a href="eijukugo-rhythm-master.html"><h3>eijukugo-rhythm-master</h3></a></div>
+            <div class="app-card"><a href="election_sim.html"><h3>election_sim</h3></a></div>
+            <div class="app-card"><a href="element_squad.html"><h3>element_squad</h3></a></div>
+            <div class="app-card"><a href="flashcard_poker.html"><h3>flashcard_poker</h3></a></div>
+            <div class="app-card"><a href="game_apps.html"><h3>game_apps</h3></a></div>
+            <div class="app-card"><a href="geography_quiz.html"><h3>geography_quiz</h3></a></div>
+            <div class="app-card"><a href="geology_timemachine.html"><h3>geology_timemachine</h3></a></div>
+            <div class="app-card"><a href="goroawase_factory.html"><h3>goroawase_factory</h3></a></div>
+            <div class="app-card"><a href="goroawase_lyricist.html"><h3>goroawase_lyricist</h3></a></div>
+            <div class="app-card"><a href="goroawase.html"><h3>goroawase</h3></a></div>
+            <div class="app-card"><a href="grammar.html"><h3>grammar</h3></a></div>
+            <div class="app-card"><a href="haiku_kigo.html"><h3>haiku_kigo</h3></a></div>
+            <div class="app-card"><a href="health_apps.html"><h3>health_apps</h3></a></div>
+            <div class="app-card"><a href="history_card_battle.html"><h3>history_card_battle</h3></a></div>
+            <div class="app-card"><a href="history_castle.html"><h3>history_castle</h3></a></div>
+            <div class="app-card"><a href="idiom_rhythm.html"><h3>idiom_rhythm</h3></a></div>
+            <div class="app-card"><a href="juken_city.html"><h3>juken_city</h3></a></div>
+            <div class="app-card"><a href="juken_fortune.html"><h3>juken_fortune</h3></a></div>
+            <div class="app-card"><a href="juken_strategy_sim.html"><h3>juken_strategy_sim</h3></a></div>
+            <div class="app-card"><a href="juken_survival.html"><h3>juken_survival</h3></a></div>
+            <div class="app-card"><a href="kanbun_ninpo.html"><h3>kanbun_ninpo</h3></a></div>
+            <div class="app-card"><a href="kanji_animation.html"><h3>kanji_animation</h3></a></div>
+            <div class="app-card"><a href="kanyoku_cooking.html"><h3>kanyoku_cooking</h3></a></div>
+            <div class="app-card"><a href="karaoke.html"><h3>karaoke</h3></a></div>
+            <div class="app-card"><a href="keigo_gakuen.html"><h3>keigo_gakuen</h3></a></div>
+            <div class="app-card"><a href="knowledge_hunter.html"><h3>knowledge_hunter</h3></a></div>
+            <div class="app-card"><a href="knowledge_labyrinth.html"><h3>knowledge_labyrinth</h3></a></div>
+            <div class="app-card"><a href="kobun_rpg.html"><h3>kobun_rpg</h3></a></div>
+            <div class="app-card"><a href="kokugo.html"><h3>kokugo</h3></a></div>
+            <div class="app-card"><a href="kotowaza_zoo.html"><h3>kotowaza_zoo</h3></a></div>
+            <div class="app-card"><a href="magic.html"><h3>magic</h3></a></div>
+            <div class="app-card"><a href="math_area.html"><h3>math_area</h3></a></div>
+            <div class="app-card"><a href="math_rap.html"><h3>math_rap</h3></a></div>
+            <div class="app-card"><a href="memory_palace.html"><h3>memory_palace</h3></a></div>
+            <div class="app-card"><a href="mineral_hunter.html"><h3>mineral_hunter</h3></a></div>
+            <div class="app-card"><a href="monster_training.html"><h3>monster_training</h3></a></div>
+            <div class="app-card"><a href="ninja.html"><h3>ninja</h3></a></div>
+            <div class="app-card"><a href="physics_space.html"><h3>physics_space</h3></a></div>
+            <div class="app-card"><a href="planetarium.html"><h3>planetarium</h3></a></div>
+            <div class="app-card"><a href="plant_simulator.html"><h3>plant_simulator</h3></a></div>
+            <div class="app-card"><a href="pref_character.html"><h3>pref_character</h3></a></div>
+            <div class="app-card"><a href="preposition.html"><h3>preposition</h3></a></div>
+            <div class="app-card"><a href="pronunciation.html"><h3>pronunciation</h3></a></div>
+            <div class="app-card"><a href="puzzle.html"><h3>puzzle</h3></a></div>
+            <div class="app-card"><a href="quiz_battle_royale.html"><h3>quiz_battle_royale</h3></a></div>
+            <div class="app-card"><a href="quiz_escape_game.html"><h3>quiz_escape_game</h3></a></div>
+            <div class="app-card"><a href="quiz.html"><h3>quiz</h3></a></div>
+            <div class="app-card"><a href="rhythm_game.html"><h3>rhythm_game</h3></a></div>
+            <div class="app-card"><a href="riddle.html"><h3>riddle</h3></a></div>
+            <div class="app-card"><a href="rika.html"><h3>rika</h3></a></div>
+            <div class="app-card"><a href="schedule_wizard.html"><h3>schedule_wizard</h3></a></div>
+            <div class="app-card"><a href="sengoku_training.html"><h3>sengoku_training</h3></a></div>
+            <div class="app-card"><a href="shakai.html"><h3>shakai</h3></a></div>
+            <div class="app-card"><a href="shiritori.html"><h3>shiritori</h3></a></div>
+            <div class="app-card"><a href="sogo.html"><h3>sogo</h3></a></div>
+            <div class="app-card"><a href="student_yoga.html"><h3>student_yoga</h3></a></div>
+            <div class="app-card"><a href="study_bank.html"><h3>study_bank</h3></a></div>
+            <div class="app-card"><a href="study_sns.html"><h3>study_sns</h3></a></div>
+            <div class="app-card"><a href="tower.html"><h3>tower</h3></a></div>
+            <div class="app-card"><a href="trade_sim.html"><h3>trade_sim</h3></a></div>
+            <div class="app-card"><a href="utility_apps.html"><h3>utility_apps</h3></a></div>
+            <div class="app-card"><a href="verb.html"><h3>verb</h3></a></div>
+            <div class="app-card"><a href="weather_caster.html"><h3>weather_caster</h3></a></div>
+            <div class="app-card"><a href="world_heritage.html"><h3>world_heritage</h3></a></div>
+            <div class="app-card"><a href="yojijukugo_sengoku.html"><h3>yojijukugo_sengoku</h3></a></div>
+        </div>
+    </main>
 </body>
 </html>
