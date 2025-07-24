@@ -3,79 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プロジェクト アプリ一覧</title>
+    <title>World Trade Next - AIでビジネスの境界を超える</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Gochi Hand', cursive;
-            background-color: #F3E5F5; /* 薄いパープル */
-            color: #6A1B9A; /* パープル */
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        h1 {
-            font-size: 4em;
-            display: inline-block;
-            border-bottom: 5px solid #CE93D8; /* 少し濃いパープル */
-            padding-bottom: 10px;
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        .app-card {
-            background-color: #FFFFFF;
-            border: 3px solid #BA68C8; /* 明るいパープル */
-            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-            box-shadow: 6px 6px 0px #BA68C8;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .app-card:hover {
-            transform: rotate(1deg) translateY(-5px);
-            box-shadow: 8px 8px 0px #AB47BC;
-        }
-        .app-card a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            padding: 40px;
-        }
-        .app-card h3 {
-            margin: 0;
-            font-size: 2em;
-            color: #8E24AA; /* 濃いパープル */
-            text-align: center;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>プロジェクト アプリ一覧</h1>
-    </header>
-    <main class="container">
-        <div class="grid">
-            <div class="app-card">
-                <a href="250718test/index.html">
-                    <h3>250718test アプリ</h3>
-                </a>
+
+    <div class="container">
+        <!-- ヒーローセクション -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">AIで、ビジネスの境界を超える。</h1>
+                <p class="hero-subtitle">World Trade Nextは、「AI x マーケティング x 集客」の専門知識を融合させ、貴社のビジネス成長を加速させる戦略パートナーです。25年の営業経験を持つプロが、売上に直結する実践的なソリューションを提供します。</p>
+                <a href="#contact" class="cta-button">まずは無料で相談する</a>
             </div>
-            <div class="app-card">
-                <a href="250720test/index.html">
-                    <h3>250720test アプリ</h3>
-                </a>
+        </header>
+
+        <!-- サービス紹介セクション -->
+        <section id="service" class="service-section">
+            <h2 class="section-title">SERVICE</h2>
+            <p class="section-subtitle">私たちの提供するソリューション</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>AIマーケティング支援</h3>
+                    <h4>データが導く、次世代の顧客体験を。</h4>
+                    <p>最新のAI分析ツールを活用し、市場トレンド、顧客行動を精��に分析。無駄のない広告運用、コンバージョン率を最大化するWebサイト改善、顧客エンゲージメントを高めるコンテンツ戦略まで、データに基づいたマーケティング施策で事業成長をフルサポートします。</p>
+                </div>
+                <div class="service-card">
+                    <h3>AI海外ビジネス支援</h3>
+                    <h4>言葉の壁を越え、世界の市場を狙う。</h4>
+                    <p>高度なAI翻訳・市場分析ツールを駆使し、海外進出を強力にバックアップ。現地の文化や商習慣に最適化されたコミュニケーション戦略、グローバルなサプライチェーン構築、海外向けECサイトの展開まで、世界を舞台にしたビジネス展開を現実のものとします。</p>
+                </div>
+                <div class="service-card">
+                    <h3>AIツール講座 x 集客 x 業務改善</h3>
+                    <h4>あなたの仕事が、AIで効率化・自動化。</h4>
+                    <p>ChatGPTやMidjourneyなど、話題のAIツールを実践的に学び、すぐに業務に活かすための講座です。単なる使い方だけでなく、SNSでの集客やコンテンツ作成、日々のタスク自動化まで、あなたのビジネスを加速させる具体的なノウハウを提供します。</p>
+                </div>
+                <div class="service-card">
+                    <h3>AI副業支援</h3>
+                    <h4>AIを味方に、新しい収入源を確立する。</h4>
+                    <p>AIを活用した新しい副業のカタチを提案します。AIによる高品質な文章・画像生成を活かした電子書籍出版、クラウドソーシングでの高単価案件獲得、AI分析による効率的なネット物販など、個人のスキルとAIを掛け合わせた収益化を支援します。</p>
+                    <a href="lp.html" class="service-button">詳細・お申し込みはこちら</a>
+                </div>
             </div>
-        </div>
-    </main>
+        </section>
+
+        <!-- 専門性セクション -->
+        <section id="professional" class="professional-section">
+            <h2 class="section-title">PROFESSIONAL</h2>
+            <p class="section-subtitle">なぜ「売上に直結する」のか？</p>
+            <div class="professional-content">
+                <div class="professional-text">
+                    <blockquote>
+                        25年間、営業の最前線で磨き上げた「言葉の力」。それは、顧客の心を動かし、行動を促すための技術です。私はこの経験をAIの分析力と掛け合わせることで、単なる美辞麗句ではない、「売るため」の文章を科学的に生み出します。お客様のビジネスが持つ本当の価値を見つけ出し、最も響く形で市場に届ける。それが私の提供するコアバリューです。
+                    </blockquote>
+                    <p class="professional-name">代表 Harry</p>
+                </div>
+                <div class="professional-details">
+                    <h4>対応可能案件</h4>
+                    <ul>
+                        <li>Webサイト/LP制作</li>
+                        <li>ECサイト構築・改善</li>
+                        <li>広告運用代行 (SNS/Google)</li>
+                        <li>MEO/SEO対策</li>
+                        <li>セールスレター/記事作成</li>
+                    </ul>
+                    <h4>対応業界</h4>
+                    <p>建設、不動産、美容、飲食、医療、士業、ITなど、多岐にわたる業界での実績がございます。各業界の特性を深く理解し、最適なソリューションを提案します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 信頼性/実績セクショ�� -->
+        <section id="credibility" class="credibility-section">
+            <h2 class="section-title">CREDIBILITY & WORKS</h2>
+            <p class="section-subtitle">信頼の証 - 資格と実績</p>
+            <div class="credibility-grid">
+                <div class="credibility-card">
+                    <h4>保有資格</h4>
+                    <div class="qualifications">
+                        <div class="qualification-group">
+                            <h5>Google 認定資格 (AI & Marketing)</h5>
+                            <ul>
+                                <li>Google AI Essentials</li>
+                                <li>Google アナリティクス「マーケティング」</li>
+                                <li>Google 広告 (検索 / ディスプレイ / アプリ / 動画 / クリエイティブ / 測定)</li>
+                                <li>AI を活用したパフォーマンス広告</li>
+                                <li>AI を活用したショッピング広告</li>
+                                <li>オフライン販売促進</li>
+                            </ul>
+                        </div>
+                        <div class="qualification-group">
+                            <h5>IBM 認定資格</h5>
+                            <ul>
+                                <li>IBM SkillsBuild (AI)</li>
+                            </ul>
+                        </div>
+                        <div class="qualification-group">
+                            <h5>その他</h5>
+                            <ul>
+                                <li>色彩士検定4級</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="credibility-card">
+                    <h4>実績</h4>
+                    <div class="works">
+                        <div class="work-item">
+                            <h5>Lancers (ランサーズ)</h5>
+                            <p><strong>認定ランサー</strong> として多数の高評価レビューを獲得。Webデザイン・ライティング部門で多数の受注実績。</p>
+                        </div>
+                        <div class="work-item">
+                            <h5>Amazon Kindle 出版</h5>
+                            <p><strong>ベストセラー獲得</strong> (マーケティング・セールス部門)。AIを活用した出版ノウハウで、複数の著者をプロデュース。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 問い合わせ/フッターセクション -->
+        <footer id="contact" class="footer-section">
+            <h2 class="section-title">CONTACT</h2>
+            <p class="footer-message">まずは、あなたのビジネスの可能性について話しませんか？</p>
+            <p>AIが切り拓く未来は、もうすぐそこです。貴社の課題、目標、そして夢をお聞かせください。最適な解決策を共に考えます。</p>
+            <div class="contact-info">
+                <p><strong>事業名:</strong> World Trade Next</p>
+                <p><strong>代表:</strong> Harry</p>
+            </div>
+            <a href="http://lin.ee/WdYf2tq" class="line-button" target="_blank">LINEでお問い合わせ</a>
+            <div class="footer-bottom">
+                <p>&copy; 2024 World Trade Next. All Rights Reserved. | Privacy Policy</p>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
