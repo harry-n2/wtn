@@ -4,44 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Trade Next - AIでビジネスの境界を超える</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- New Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- ヒーローセクション -->
-        <header class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">AIで、ビジネスの境界を超える。</h1>
-                <p class="hero-subtitle">World Trade Nextは、「AI x マーケティング x 集客」の専門知識を融合させ、貴社のビジネス成長を加速させる戦略パートナーです。25年の営業経験を持つプロが、売上に直結する実践的なソリューションを提供します。</p>
-                <a href="#contact" class="cta-button">まずは無料で相談する</a>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">World Trade Next</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#service" class="nav-link">SERVICE</a></li>
+                <li class="nav-item"><a href="#professional" class="nav-link">PROFESSIONAL</a></li>
+                <li class="nav-item"><a href="#works" class="nav-link">WORKS</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link cta-button-nav">お問い合わせ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <!-- サービス紹介セクション -->
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="video-background">
+            <!-- Ideally, a self-hosted or CDN-hosted video -->
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-video-of-a-man-with-a-futuristic-helmet-42431-large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span id="typing-text"></span>
+            </h1>
+            <p class="hero-subtitle">World Trade Nextは、「AI x マーケティング x 集客」の専門知識を融合させ、貴社のビジネス成長を加速させる戦略パートナーです。25年の営業経験を持つプロが、売上に直結する実践的なソリューションを提供します。</p>
+            <a href="#contact" class="cta-button">まずは無料で相談する <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Service Section -->
         <section id="service" class="service-section">
             <h2 class="section-title">SERVICE</h2>
             <p class="section-subtitle">私たちの提供するソリューション</p>
             <div class="service-grid">
+                <!-- Service Card 1 -->
                 <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
                     <h3>AIマーケティング支援</h3>
                     <h4>データが導く、次世代の顧客体験を。</h4>
-                    <p>最新のAI分析ツールを活用し、市場トレンド、顧客行動を精��に分析。無駄のない広告運用、コンバージョン率を最大化するWebサイト改善、顧客エンゲージメントを高めるコンテンツ戦略まで、データに基づいたマーケティング施策で事業成長をフルサポートします。</p>
+                    <p>最新のAI分析ツールを活用し、市場トレンド、顧客行動を精緻に分析。無駄のない広告運用、コンバージョン率を最大化するWebサイト改善、顧客エンゲージメントを高めるコンテンツ戦略まで、データに基づいたマーケティング施策で事業成長をフルサポートします。</p>
                 </div>
+                <!-- Service Card 2 -->
                 <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
                     <h3>AI海外ビジネス支援</h3>
                     <h4>言葉の壁を越え、世界の市場を狙う。</h4>
                     <p>高度なAI翻訳・市場分析ツールを駆使し、海外進出を強力にバックアップ。現地の文化や商習慣に最適化されたコミュニケーション戦略、グローバルなサプライチェーン構築、海外向けECサイトの展開まで、世界を舞台にしたビジネス展開を現実のものとします。</p>
                 </div>
+                <!-- Service Card 3 -->
                 <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <h3>AIツール講座 x 集客 x 業務改善</h3>
                     <h4>あなたの仕事が、AIで効率化・自動化。</h4>
                     <p>ChatGPTやMidjourneyなど、話題のAIツールを実践的に学び、すぐに業務に活かすための講座です。単なる使い方だけでなく、SNSでの集客やコンテンツ作成、日々のタスク自動化まで、あなたのビジネスを加速させる具体的なノウハウを提供します。</p>
                 </div>
+                <!-- Service Card 4 -->
                 <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
                     <h3>AI副業支援</h3>
                     <h4>AIを味方に、新しい収入源を確立する。</h4>
                     <p>AIを活用した新しい副業のカタチを提案します。AIによる高品質な文章・画像生成を活かした電子書籍出版、クラウドソーシングでの高単価案件獲得、AI分析による効率的なネット物販など、個人のスキルとAIを掛け合わせた収益化を支援します。</p>
@@ -50,96 +89,159 @@
             </div>
         </section>
 
-        <!-- 専門性セクション -->
+        <!-- Professional Section -->
         <section id="professional" class="professional-section">
-            <h2 class="section-title">PROFESSIONAL</h2>
-            <p class="section-subtitle">なぜ「売上に直結する」のか？</p>
-            <div class="professional-content">
-                <div class="professional-text">
-                    <blockquote>
-                        25年間、営業の最前線で磨き上げた「言葉の力」。それは、顧客の心を動かし、行動を促すための技術です。私はこの経験をAIの分析力と掛け合わせることで、単なる美辞麗句ではない、「売るため」の文章を科学的に生み出します。お客様のビジネスが持つ本当の価値を見つけ出し、最も響く形で市場に届ける。それが私の提供するコアバリューです。
-                    </blockquote>
-                    <p class="professional-name">代表 Harry</p>
-                </div>
-                <div class="professional-details">
-                    <h4>対応可能案件</h4>
-                    <ul>
-                        <li>Webサイト/LP制作</li>
-                        <li>ECサイト構築・改善</li>
-                        <li>広告運用代行 (SNS/Google)</li>
-                        <li>MEO/SEO対策</li>
-                        <li>セールスレター/記事作成</li>
-                    </ul>
-                    <h4>対応業界</h4>
-                    <p>建設、不動産、美容、飲食、医療、士業、ITなど、多岐にわたる業界での実績がございます。各業界の特性を深く理解し、最適なソリューションを提案します。</p>
+            <div class="container">
+                <div class="professional-content">
+                    <div class="professional-image">
+                        <!-- Placeholder for representative's photo -->
+                        <img src="https://source.unsplash.com/random/400x400/?portrait,man" alt="代表 Harry">
+                    </div>
+                    <div class="professional-text">
+                        <h2 class="section-title-left">PROFESSIONAL</h2>
+                        <p class="section-subtitle-left">なぜ「売上に直結する」のか？</p>
+                        <blockquote>
+                            25年間、営業の最前線で磨き上げた「言葉の力」。それは、顧客の心を動かし、行動を促すための技術です。私はこの経験をAIの分析力と掛け合わせることで、単なる美辞麗句ではない、「売るため」の文章を科学的に生み出します。お客様のビジネスが持つ本当の価値を見つけ出し、最も響く形で市場に届ける。それが私の提供するコアバリューです。
+                        </blockquote>
+                        <p class="professional-name">代表 Harry</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 信頼性/実績セクショ�� -->
-        <section id="credibility" class="credibility-section">
-            <h2 class="section-title">CREDIBILITY & WORKS</h2>
-            <p class="section-subtitle">信頼の証 - 資格と実績</p>
-            <div class="credibility-grid">
-                <div class="credibility-card">
+        <!-- Works Section (Credibility) -->
+        <section id="works" class="works-section">
+            <h2 class="section-title">WORKS & CREDIBILITY</h2>
+            <p class="section-subtitle">実績と信頼の証</p>
+            <div class="works-grid">
+                <!-- Work Item 1 -->
+                <div class="work-item">
+                    <img src="https://source.unsplash.com/random/600x400/?web,design,modern" alt="Webサイト制作実績">
+                    <div class="work-item-overlay">
+                        <h5>心に響くWebサイト/LP制作</h5>
+                        <p>ユーザーの心を掴み、行動を促す。成果に繋がるWebサイトを構築します。</p>
+                    </div>
+                </div>
+                <!-- Work Item 2 -->
+                <div class="work-item">
+                    <img src="https://source.unsplash.com/random/600x400/?seo,analytics,chart" alt="SEO/MEO対策実績">
+                    <div class="work-item-overlay">
+                        <h5>データ駆動型SEO/MEO対策</h5>
+                        <p>検索エンジンから優良な見込み客を。データに基づいたSEO/MEO戦略。</p>
+                    </div>
+                </div>
+                <!-- Work Item 3 -->
+                <div class="work-item">
+                    <img src="https://source.unsplash.com/random/600x400/?ebook,reading,publishing" alt="Kindle出版実績">
+                    <div class="work-item-overlay">
+                        <h5>AI活用による書籍出版</h5>
+                        <p>あなたの知識や経験を、価値ある一冊に。AIで出版プロセスを加速します。</p>
+                    </div>
+                </div>
+                 <!-- Work Item 4 (Qualifications) -->
+                <div class="work-item qualification-card">
                     <h4>保有資格</h4>
-                    <div class="qualifications">
-                        <div class="qualification-group">
-                            <h5>Google 認定資格 (AI & Marketing)</h5>
-                            <ul>
-                                <li>Google AI Essentials</li>
-                                <li>Google アナリティクス「マーケティング」</li>
-                                <li>Google 広告 (検索 / ディスプレイ / アプリ / 動画 / クリエイティブ / 測定)</li>
-                                <li>AI を活用したパフォーマンス広告</li>
-                                <li>AI を活用したショッピング広告</li>
-                                <li>オフライン販売促進</li>
-                            </ul>
-                        </div>
-                        <div class="qualification-group">
-                            <h5>IBM 認定資格</h5>
-                            <ul>
-                                <li>IBM SkillsBuild (AI)</li>
-                            </ul>
-                        </div>
-                        <div class="qualification-group">
-                            <h5>その他</h5>
-                            <ul>
-                                <li>色彩士検定4級</li>
-                            </ul>
-                        </div>
+                    <ul>
+                        <li><i class="fa-brands fa-google"></i> Google AI & Marketing 認定</li>
+                        <li><i class="fa-brands fa-ibm"></i> IBM AI 認定</li>
+                        <li><i class="fa-solid fa-award"></i> Lancers 認定ランサー</li>
+                        <li><i class="fa-solid fa-palette"></i> 色彩士検定4級</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <h2 class="section-title">TESTIMONIALS</h2>
+            <p class="section-subtitle">お客様の声</p>
+            <div class="testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <p>"AIマーケティングの導入で、これまでリーチできなかった顧客層にアプローチでき、事業の可能性が大きく広がりました。専門的な知見からの提案が非常に心強いです。"</p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/100x100/?portrait,man,professional" alt="お客様の声">
+                        <span>ITサービス運営者様</span>
                     </div>
                 </div>
-                <div class="credibility-card">
-                    <h4>実績</h4>
-                    <div class="works">
-                        <div class="work-item">
-                            <h5>Lancers (ランサーズ)</h5>
-                            <p><strong>認定ランサー</strong> として多数の高評価レビューを獲得。Webデザイン・ライティング部門で多数の受注実績。</p>
-                        </div>
-                        <div class="work-item">
-                            <h5>Amazon Kindle 出版</h5>
-                            <p><strong>ベストセラー獲得</strong> (マーケティング・セールス部門)。AIを活用した出版ノウハウで、複数の著者をプロデュース。</p>
-                        </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <p>"丁寧なサポートのおかげで、複雑だった海外展開のプロセスが明確になりました。言語や文化の壁を越えて、安心して事業を進められています。"</p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/100x100/?portrait,woman,business" alt="お客様の声">
+                        <span>輸出入関連企業様</span>
+                    </div>
+                </div>
+                 <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <p>"AIツールの実践的な活用法を学び、日々の業務が劇的に効率化しました。これにより、より創造的な仕事に集中できる時間が増え、サービスの質も向上しました。"</p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/100x100/?portrait,person,creative" alt="お客様の声">
+                        <span>クリエイティブ職の方</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 問い合わせ/フッターセクション -->
-        <footer id="contact" class="footer-section">
-            <h2 class="section-title">CONTACT</h2>
-            <p class="footer-message">まずは、あなたのビジネスの可能性について話しませんか？</p>
-            <p>AIが切り拓く未来は、もうすぐそこです。貴社の課題、目標、そして夢をお聞かせください。最適な解決策を共に考えます。</p>
-            <div class="contact-info">
-                <p><strong>事業名:</strong> World Trade Next</p>
-                <p><strong>代表:</strong> Harry</p>
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <h2 class="section-title">FAQ</h2>
+            <p class="section-subtitle">よくあるご質問</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>AIの知識が全くありませんが、大丈夫ですか？</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、全く問題ありません。当社のサービスは、AIの専門知識がない方でもご理解いただけるよう、丁寧に説明しながら進めます。ビジネスの課題解決にAIをどう活かすか、という視点でサポートいたしますのでご安心ください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>相談だけでも可能ですか？</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>もちろんです。初回のご相談は無料です。お客様のビジネスの状況や課題をお伺いし、どのような貢献ができるかをご提案させていただきます。無理な営業は一切いたしませんので、お気軽にお問い合わせください。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>地方の企業ですが、対応可能ですか？</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、全国対応可能です。オンラインでのミーティングを基本としておりますので、場所を問わずサービスをご提供できます。必要に応じて出張対応も可能ですので、ご相談ください。</p>
+                    </div>
+                </div>
             </div>
-            <a href="http://lin.ee/WdYf2tq" class="line-button" target="_blank">LINEでお問い合わせ</a>
-            <div class="footer-bottom">
-                <p>&copy; 2024 World Trade Next. All Rights Reserved. | Privacy Policy</p>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact" class="footer-section">
+            <div class="container">
+                <h2 class="section-title">CONTACT</h2>
+                <p class="footer-message">AIが切り拓く未来は、もうすぐそこです。<br>あなたのビジネスの可能性について話しませんか？</p>
+                <a href="http://lin.ee/WdYf2tq" class="cta-button line-button" target="_blank">
+                    <i class="fa-brands fa-line"></i> LINEで今すぐ無料相談
+                </a>
+                <div class="contact-info">
+                    <p><strong>事業名:</strong> World Trade Next</p>
+                    <p><strong>代表:</strong> Harry</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 World Trade Next. All Rights Reserved. | Privacy Policy</p>
+                </div>
             </div>
         </footer>
     </div>
 
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.8.3/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
