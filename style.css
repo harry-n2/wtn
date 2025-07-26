@@ -786,3 +786,53 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+/*================================================
+ * 13. Service Details
+ *================================================*/
+.service-details {
+    background: var(--surface-color-solid);
+    border: 1px solid var(--border-color);
+    padding: 35px;
+    border-radius: 15px;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.service-details h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.service-details h3:first-child {
+    margin-top: 0;
+}
+
+.service-details h4 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-details p, .service-details ul {
+    color: var(--text-color-secondary);
+    margin-bottom: 1rem;
+}
+
+.service-details ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.service-details ul li {
+    margin-bottom: 0.5rem;
+}
+
+.service-details strong {
+    color: var(--text-color);
+}
