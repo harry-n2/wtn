@@ -1,0 +1,150 @@
+/* LP Free Report Specific Styles */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.lp-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d9534f; /* Red for warning */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    border-left: 5px solid #4a90e2;
+    padding-left: 15px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #337ab7;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+ul, ol {
+    margin-bottom: 1.5em;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 0.8em;
+}
+
+strong {
+    color: #d9534f;
+}
+
+/* Block Styles */
+.testimonial, .warning-box, .success-box, .step-box, .choice-box {
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    border-left: 5px solid;
+}
+
+.testimonial {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+    font-style: italic;
+}
+
+.warning-box {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.success-box {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.step-box {
+    background-color: #e7f3fe;
+    border-color: #4a90e2;
+}
+
+.choice-box {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.cta-button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, #f0ad4e, #f89406);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.small-text {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #777;
+}
+
+.final-cta {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
